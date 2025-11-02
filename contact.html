@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>CooK's - Contact</title>
+    <!-- icoontjes -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  
+
+</head>
+
+  <body>  
+   <!-- Navigation -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container-fluid px-4">
+
+    <!-- Left: Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="pics/Logo.PNG" alt="Logo" width="150" height="50">
+    </a>
+
+    <!-- Center: Search (desktop only) -->
+    <div class="d-none d-lg-block mx-auto" style="width: 40%;">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Zoeken..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Zoek</button>
+      </form>
+    </div>
+
+    <!-- Right: Toggler + Nav -->
+    <div class="d-flex align-items-center">
+      <!-- Mobile Search Icon -->
+      <button class="btn btn-link d-lg-none me-2" id="mobileSearchToggle" type="button">
+        <i class="bi bi-search" style="font-size: 1.3rem;"></i>
+      </button>
+
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+      <ul class="navbar-nav text-center ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="Home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="onzereizen.html">onze reizen</a></li>
+        <li class="nav-item"><a class="nav-link" href="fotogallerij.html">fotogallerij</a></li>
+        <li class="nav-item"><a class="nav-link" href="Home/reistips.html">reistips</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hidden expanding search bar for mobile -->
+  <div class="mobile-search d-lg-none px-3 py-2 bg-light">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Zoeken..." aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Zoek</button>
+    </form>
+  </div>
+</nav>
+
+<div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Contact Formulier</h2>
+                    <form method="POST">
+                        <div class="row row-space">
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Voornaam</label>
+                                    <input class="input--style-4" type="text" name="first_name">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Achternaam</label>
+                                    <input class="input--style-4" type="text" name="last_name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-5">
+                                <div class="input-group">
+                                    <label class="label">Geboortedatum</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4 js-datepicker" type="text" name="birthday">
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Geslacht</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Man
+                                            <input type="radio" checked="checked" name="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Vrouw
+                                            <input type="radio" name="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-8">
+                                <div class="input-group">
+                                    <label class="label">Email</label>
+                                    <input class="input--style-4" type="email" name="email">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Telefoonnummer</label>
+                                    <input class="input--style-4" type="text" name="phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Onderwerp</label><br><br><br>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="subject">
+                                    <option disabled="disabled" selected="selected">Kies...</option>
+                                    <option>Tickets</option>
+                                    <option>Reisbestemming</option>
+                                    <option>Offerte</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="p-t-15">
+                            <a class="btn btn--radius-2 btn--blue" href="bedankt.html"></a>
+                            <button formaction="bedankt.html" class="btn btn--radius-2 btn--blue" type="submit" >Verstuur</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+   
+  <!-- Pagina Voet -->
+  <footer class="py-5 bg-dark text-white">
+     
+  
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Contactgegevens</h6>
+                <p> <i class="fas fa-map-marker-alt"></i>
+                    Smitswei 36, Twijzelerheide                <br>9287 NE Friesland, Nederland<br>
+                    <br><i class="fa fa-envelope" aria-hidden="true"></i>Dytoonn@programmer.net
+                    
+                    
+                    
+                    <br><i class="fa fa-fax"></i>01 234 567
+                    <br>
+                    <br><i class="fa fa-facebook-messenger"></i>Facebook
+                    <i class="fa fa-twitter-square"></i>Twitter
+                    <i class="fab fa-twitch" aria-hidden="true"></i>
+                </p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Lorem ipsum</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a volutpat elit. Nulla diam ex, dignissim nec mauris eu, malesuada lacinia diam. Aliquam euismod quam vitae dui tempus, sed vulputate sem feugiat. Phasellus tempor lacus sem, vel hendrerit lacus dapibus nec. Suspendisse posuere, leo </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+
+            </div>
+            This site is for educational purposes and fictional</div>
+    </div>
+</footer>
+    <!-- einde voet-->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

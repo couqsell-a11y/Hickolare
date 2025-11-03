@@ -1219,13 +1219,24 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #f4f7fb 100%);
 }
 
-html, body {
-  overflow-x: hidden;
+body {
+  /* only prevent horizontal scroll caused by wide elements */
+  overflow-x: hidden; /* optional, keep if necessary */
+  position: relative; /* ensures proper viewport calculations */
 }
-img, .container, .services-grid, .hero-section {
+
+img {
   max-width: 100%;
-  box-sizing: border-box;
+  height: auto;
+  display: block;
 }
+
+/* make sure your grid and sections are not squashed */
+.services-grid, .hero-section {
+  width: 100%;
+}
+
+
 
 
 

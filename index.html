@@ -2,6 +2,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <script>
+  const lang = navigator.language || navigator.userLanguage;
+
+  if (lang.startsWith('nl')) {
+    // Dutch (Flemish) → redirect to Dutch homepage
+    window.location.href = '/nl/index.html';
+  } else if (lang.startsWith('en')) {
+    // English → redirect to English homepage
+    window.location.href = 'index.html';
+  } else {
+    // Fallback → default to Dutch
+    window.location.href = '/nl/index.html';
+  }
+</script>
+
+  
   <title>Hicko-IT - HomePage</title>
 
   
@@ -33,7 +50,7 @@
   <!-- Collapsible menu -->
   <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
     <ul class="navbar-nav text-center ms-auto">
-      <li class="nav-item"><a class="nav-link active" href="Home.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
       <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
       <li class="nav-item"><a class="nav-link" href="Pricing.html">Pricing</a></li>
       <li class="nav-item"><a class="nav-link" href="Products.html">Products</a></li>
@@ -244,16 +261,16 @@
     <div class="footer-section">
       <h3>Quick Links</h3>
       <ul>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#GetStarted">Contact</a></li>
       </ul>
     </div>
 
     <div class="footer-section">
       <h3>Contact Info</h3>
       <p>Phone: +1 (555) 123-4567</p>
-      <p>Email: <a href="mailto:support@youritsolutions.com">support@youritsolutions.com</a></p>
-      <p>Location: Your City, State</p>
+      <p>Email: <a href="mailto:info@hicko-it.com">info@hicko-it.com</a></p>
+      <p>Location: Vlaanderen</p>
     </div>
   </div>
 

@@ -5,10 +5,9 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>CooK's - Contact</title>
+  <meta name="description" content="Contact Hicko-IT for professional IT consulting, support, and solutions. Get in touch for your technology needs.">
+  <meta name="keywords" content="contact IT support, IT consulting, technology solutions, get in touch">
+  <title>Hicko-IT - Contact</title>
     <!-- icoontjes -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <!-- Icons font CSS-->
@@ -22,7 +21,7 @@
     <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
-    <link href="css/main.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/maine.css">
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -66,11 +65,11 @@
     <!-- Collapsible Menu -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
       <ul class="navbar-nav text-center ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="Home.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="onzereizen.html">onze reizen</a></li>
-        <li class="nav-item"><a class="nav-link" href="fotogallerij.html">fotogallerij</a></li>
-        <li class="nav-item"><a class="nav-link" href="Home/reistips.html">reistips</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="Pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="Products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -88,45 +87,19 @@
         <div class="wrapper wrapper--w680">
             <div class="card card-4">
                 <div class="card-body">
-                    <h2 class="title">Contact Formulier</h2>
+                    <h2 class="title">Contact Us</h2>
                     <form method="POST">
                         <div class="row row-space">
                             <div class="col-6">
                                 <div class="input-group">
-                                    <label class="label">Voornaam</label>
+                                    <label class="label">First Name</label>
                                     <input class="input--style-4" type="text" name="first_name">
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="input-group">
-                                    <label class="label">Achternaam</label>
+                                    <label class="label">Last Name</label>
                                     <input class="input--style-4" type="text" name="last_name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-space">
-                            <div class="col-5">
-                                <div class="input-group">
-                                    <label class="label">Geboortedatum</label>
-                                    <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="birthday">
-                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="input-group">
-                                    <label class="label">Geslacht</label>
-                                    <div class="p-t-10">
-                                        <label class="radio-container m-r-45">Man
-                                            <input type="radio" checked="checked" name="gender">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="radio-container">Vrouw
-                                            <input type="radio" name="gender">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -139,26 +112,31 @@
                             </div>
                             <div class="col-6">
                                 <div class="input-group">
-                                    <label class="label">Telefoonnummer</label>
+                                    <label class="label">Phone Number</label>
                                     <input class="input--style-4" type="text" name="phone">
                                 </div>
                             </div>
                         </div>
                         <div class="input-group">
-                            <label class="label">Onderwerp</label><br><br><br>
+                            <label class="label">Subject</label><br><br><br>
                             <div class="rs-select2 js-select-simple select--no-search">
                                 <select name="subject">
-                                    <option disabled="disabled" selected="selected">Kies...</option>
-                                    <option>Tickets</option>
-                                    <option>Reisbestemming</option>
-                                    <option>Offerte</option>
+                                    <option disabled="disabled" selected="selected">Choose...</option>
+                                    <option>IT Support</option>
+                                    <option>Network Setup</option>
+                                    <option>Quote Request</option>
+                                    <option>Other</option>
                                 </select>
                                 <div class="select-dropdown"></div>
                             </div>
                         </div>
+                        <div class="input-group">
+                            <label class="label">Message</label>
+                            <textarea class="input--style-4" name="message" rows="4" placeholder="Tell us about your IT needs..."></textarea>
+                        </div>
                         <div class="p-t-15">
                             <a class="btn btn--radius-2 btn--blue" href="bedankt.html"></a>
-                            <button formaction="bedankt.html" class="btn btn--radius-2 btn--blue" type="submit" >Verstuur</button>
+                            <button formaction="Thanks.html" class="btn btn--radius-2 btn--blue" type="submit" >Send Message</button>
                         </div>
                     </form>
                 </div>
@@ -176,36 +154,49 @@
     <!-- Main JS-->
     <script src="js/global.js"></script>
    
-  <!-- Pagina Voet -->
+  <!-- Footer -->
   <footer class="py-5 bg-dark text-white">
-     
-  
-    <div class="container text-white">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <h6 class="text-uppercase font-weight-bold">Contactgegevens</h6>
-                <p> <i class="fas fa-map-marker-alt"></i>
-                    Smitswei 36, Twijzelerheide                <br>9287 NE Friesland, Nederland<br>
-                    <br><i class="fa fa-envelope" aria-hidden="true"></i>Dytoonn@programmer.net
-                    
-                    
-                    
-                    <br><i class="fa fa-fax"></i>01 234 567
-                    <br>
-                    <br><i class="fa fa-facebook-messenger"></i>Facebook
-                    <i class="fa fa-twitter-square"></i>Twitter
-                    <i class="fab fa-twitch" aria-hidden="true"></i>
-                </p>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12">
-                <h6 class="text-uppercase font-weight-bold">Lorem ipsum</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a volutpat elit. Nulla diam ex, dignissim nec mauris eu, malesuada lacinia diam. Aliquam euismod quam vitae dui tempus, sed vulputate sem feugiat. Phasellus tempor lacus sem, vel hendrerit lacus dapibus nec. Suspendisse posuere, leo </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h6 class="text-uppercase fw-bold mb-3">Contact</h6>
+          <p class="mb-1">
+            <i class="fas fa-map-marker-alt me-2"></i>
+            Smitswei 36, Twijzelerheide<br>
+            9287 NE Friesland, Nederland</p>
+          <p class="mb-1">
+            <i class="fa fa-envelope me-2"></i>
+            info@hicko-it.com
+          </p>
+          <p class="mb-1">
+            <i class="fa fa-fax me-2"></i>
+            01 234 567
+          </p>
 
-            </div>
-            This site is for educational purposes and fictional</div>
+          <div class="mt-3">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter-square"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitch"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-8 col-md-6">
+          <h6 class="text-uppercase fw-bold mb-3">About Hicko-IT</h6>
+          <p>
+            Professional IT solutions for businesses and individuals. From network installations to software deployments,
+            we keep your technology running smoothly.
+          </p>
+          <p>
+            Our experienced team provides reliable, professional IT services that help your business thrive.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-4 border-top pt-3 small text-muted">
+        This site is for educational purposes and is fictional.
+      </div>
     </div>
-</footer>
+  </footer>
     <!-- einde voet-->
 
   <!-- Bootstrap core JavaScript -->

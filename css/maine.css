@@ -1219,4 +1219,13 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #f4f7fb 100%);
 }
 
+html, body {
+  overflow-x: hidden;
+}
+img, .container, .services-grid, .hero-section {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
 

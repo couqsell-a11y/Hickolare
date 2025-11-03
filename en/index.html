@@ -3,24 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-  <title>Hicko-IT - HomePage</title>
-
-  
- 
+  <title>Hicko-IT - HomePagina</title>
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  
-
+  <!-- Animate on Scroll Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../css/maine.css">
- 
   </head>
 
   <body>
 <!-- Navbar -->
 <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top px-4">
-
-
   <a class="navbar-brand" href="#">
     <img src="../pics/Logo.png" alt="Logo" width="150" height="50">
   </a>
@@ -31,7 +25,6 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 </div>
-
   <!-- Collapsible menu -->
   <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
     <ul class="navbar-nav text-center ms-auto">
@@ -42,23 +35,14 @@
       <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
     </ul>
   </div>
-
-  <!-- Mobile search bar -->
+  <!-- Mobile search bar 
   <div class="mobile-search d-lg-none">
     <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Zoeken..." aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Zoek</button>
     </form>
   </div>
-  
- 
-
-  <!-- <select onchange="location = this.value;">
-  <option value="/en/testing.html">English</option>
-  <option value="/fr/testing.html">Français</option>
-  <option value="/nl/testing.html">Nederlands</option>
-</select> -->
-
+ -->
 </nav>
 <!-- End of Navbar -->
     
@@ -76,83 +60,86 @@
     </div>
   </div>
 </section>
-    
-     
+<!-- Services content-->
+  <section id="Services" class="services-section" data-aos="fade-up">
+  <h2 data-aos="fade-up" data-aos-delay="100">Our Services</h2>
+  <p data-aos="fade-up" data-aos-delay="200">
+    Comprehensive IT solutions designed to meet all your technology needs
+  </p>
 
+  <div class="services-grid">
+    <a href="contact.html" class="service-card" data-aos="zoom-in" data-aos-delay="300">
+      <img src="pics/consulting-icon.png" alt="IT Consulting">
+      <h3>IT Consulting & Advisory</h3>
+      <p>Expert guidance to help you make informed technology decisions for your business growth.</p>
+    </a>
 
-<!-- Example content below hero -->
-
-  <section id="Services" class="services-section">
-    <h2>Our Services</h2>
-    <p>Comprehensive IT solutions designed to meet all your technology needs</p>
-
-    <div class="services-grid">
-      <a href="contact.html" class="service-card">
-      
-        <img src="../pics/consulting-icon.png" alt="IT Consulting">
-        <h3>IT Consulting & Advisory</h3>
-        <p>Expert guidance to help you make informed technology decisions for your business growth.</p>
-      </a>
-
-      <div class="service-card">
-        <img src="../pics/cart.png" alt="Product Sales">
-        <h3>Product Sales</h3>
-        <p>Quality hardware and software solutions tailored to your specific business needs.</p>
-      </div>
-
-      <div class="service-card">
-        <img src="../pics/support-icon.png" alt="Support Subscriptions">
-        <h3>Support Subscriptions</h3>
-        <p>Comprehensive ongoing support for your software and hardware with flexible subscription plans.</p>
-      </div>
-
-      <div class="service-card">
-        <img src="../pics/wrench.png" alt="Maintenance & Cleaning">
-        <h3>Maintenance & Cleaning</h3>
-        <p>Professional physical maintenance and cleaning services to keep your equipment in peak condition.</p>
-      </div>
-
-      <div class="service-card">
-        <img src="../pics/network-icon.png" alt="Network Installations">
-        <h3>Network Installations</h3>
-        <p>Extend your internet connectivity anywhere - from your home office to your backyard shed.</p>
-      </div>
+    <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+      <img src="pics/cart.png" alt="Product Sales">
+      <h3>Product Sales</h3>
+      <p>Quality hardware and software solutions tailored to your specific business needs.</p>
     </div>
-  </section>
 
+    <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+      <img src="pics/support-icon.png" alt="Support Subscriptions">
+      <h3>Support Subscriptions</h3>
+      <p>Comprehensive ongoing support for your software and hardware with flexible subscription plans.</p>
+    </div>
+
+    <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
+      <img src="pics/wrench.png" alt="Maintenance & Cleaning">
+      <h3>Maintenance & Cleaning</h3>
+      <p>Professional physical maintenance and cleaning services to keep your equipment in peak condition.</p>
+    </div>
+
+    <div class="service-card" data-aos="zoom-in" data-aos-delay="700">
+      <img src="pics/network-icon.png" alt="Network Installations">
+      <h3>Network Installations</h3>
+      <p>Extend your internet connectivity anywhere — from your home office to your backyard shed.</p>
+    </div>
+  </div>
+</section>
     
-    
+    <!-- Why Choose us Section with AOS -->
     <section class="why-choose-us">
   <div class="container">
+
+    <!-- Left column -->
     <div class="why-left">
-      <h2>Why Choose Us?</h2>
-      <p>
-        We're committed to providing reliable, professional IT services that help your business thrive. 
-        Our team brings expertise, dedication, and personalized service to every project.
-      </p>
+      <div data-aos="fade-right" data-aos-duration="1000">
+        <h2>Why Choose Us?</h2>
+        <p>
+          We're committed to providing reliable, professional IT services that help your business thrive. 
+          Our team brings expertise, dedication, and personalized service to every project.
+        </p>
 
-      <ul class="features">
-        <li>✅ Expert technicians with years of experience</li>
-        <li>✅ Flexible support plans tailored to your needs</li>
-        <li>✅ Fast response times and reliable service</li>
-        <li>✅ Competitive pricing with transparent quotes</li>
-        <li>✅ Ongoing support and maintenance options</li>
-        <li>✅ Local service with personalized attention</li>
-      </ul>
+        <ul class="features">
+          <li data-aos="fade-up" data-aos-delay="100">✅ Expert technicians with years of experience</li>
+          <li data-aos="fade-up" data-aos-delay="200">✅ Flexible support plans tailored to your needs</li>
+          <li data-aos="fade-up" data-aos-delay="300">✅ Fast response times and reliable service</li>
+          <li data-aos="fade-up" data-aos-delay="400">✅ Competitive pricing with transparent quotes</li>
+          <li data-aos="fade-up" data-aos-delay="500">✅ Ongoing support and maintenance options</li>
+          <li data-aos="fade-up" data-aos-delay="600">✅ Local service with personalized attention</li>
+        </ul>
+      </div>
     </div>
 
+    <!-- Right column -->
     <div class="why-right">
-      <h3>Ready to upgrade your IT infrastructure?</h3>
-      <p>
-        From simple home network extensions to comprehensive business IT solutions, we've got you covered.
-      </p>
+      <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <h3>Ready to upgrade your IT infrastructure?</h3>
+        <p>
+          From simple home network extensions to comprehensive business IT solutions, we've got you covered.
+        </p>
 
-      <ul class="highlights">
-        <li>• Same-day service available</li>
-        <li>• Free initial consultation</li>
-        <li>• Satisfaction guaranteed</li>
-      </ul>
+        <ul class="highlights">
+          <li data-aos="fade-up" data-aos-delay="700">• Same-day service available</li>
+          <li data-aos="fade-up" data-aos-delay="800">• Free initial consultation</li>
+          <li data-aos="fade-up" data-aos-delay="900">• Satisfaction guaranteed</li>
+        </ul>
+      </div>
     </div>
+
   </div>
 </section>
     
@@ -179,7 +166,7 @@
   </div>
 </section> -->
 
-<section id="GetStarted" class="get-in-touch">
+<!-- <section id="GetStarted" class="get-in-touch">
   <div class="container">
     <h2>Get In Touch</h2>
     <p>Ready to discuss your IT needs? Contact us today for a free consultation.</p>
@@ -217,22 +204,16 @@
       </div>
     </div>
   </div>
-</section>
+</section> 
+-->
 
-    
-    
-    
-    
-  
+    <!-- Language Selector -->
 <div id="floating-lang">
   
   <button class="lang-btn" data-url="index.html" onclick="changeLanguage('index.html')">EN</button>
-<button class="lang-btn" data-url="nl/home.html" onclick="changeLanguage('nl/home.html')">NL</button>
+<button class="lang-btn" data-url="../nl/index.html" onclick="changeLanguage('../nl/index.html')">NL</button>
 </div>
-    
-    
-  
-    
+        
     <!-- Start Footer -->
 <footer class="footer">
   <div class="footer-container">
@@ -263,16 +244,19 @@
   </div>
 </footer>
     <!-- End of footer -->
-</body>
-</html>
-    
-    
+
     
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- Custom JS files -->
 <script src="../js/mobile-search.js"></script>
 <script src="../js/navbar.js"></script>
+<!-- AOS -->
 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="../js/AOS.js"></script>
 
+</body>
+</html>
 
 

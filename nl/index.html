@@ -4,22 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Hicko-IT - HomePagina</title>
-
-  
- 
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  
-
+  <!-- Animate on Scroll Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../css/maine.css">
- 
   </head>
 
+  
   <body>
 <!-- Navbar -->
 <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top px-4">
-
-
   <a class="navbar-brand" href="#">
     <img src="../pics/Logo.png" alt="Logo" width="150" height="50">
   </a>
@@ -30,7 +26,6 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 </div>
-
   <!-- Collapsible menu -->
   <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
     <ul class="navbar-nav text-center ms-auto">
@@ -41,26 +36,17 @@
       <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
     </ul>
   </div>
-
-  <!-- Mobile search bar -->
+  <!-- Mobile search bar 
   <div class="mobile-search d-lg-none">
     <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Zoeken..." aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Zoek</button>
     </form>
   </div>
-  
-
-
-  <!-- <select onchange="location = this.value;">
-  <option value="/en/testing.html">English</option>
-  <option value="/fr/testing.html">Français</option>
-  <option value="/nl/testing.html">Nederlands</option>
-</select> -->
-
+-->
 </nav>
 <!-- End of Navbar -->
-    
+  
 <!-- Hero Section -->
 <section class="hero-section d-flex align-items-center text-white">
   <div class="container text-center">
@@ -75,83 +61,81 @@ Wij zorgen ervoor dat uw technologie altijd vlot en zorgeloos blijft werken.
     </div>
   </div>
 </section>
-    
-     
-
-
-<!-- Example content below hero -->
-
-  <section id="Services" class="services-section">
-    <h2>Onze Diensten</h2>
-    <p>Volledige IT-oplossingen, op maat van al uw technologie behoeften</p>
-
-    <div class="services-grid">
-      <a href="contact.html" class="service-card">
-      
-        <img src="../pics/consulting-icon.png" alt="IT Consulting">
-        <h3>IT-advies & Consultancy</h3>
-        <p>Expert advies om u te helpen de juiste technologiekeuzes te maken, zowel voor uw bedrijf als thuisgebruik.</p>
-      </a>
-
-      <div class="service-card">
-        <img src="../pics/cart.png" alt="Product Sales">
-        <h3>Productverkoop</h3>
-        <p>Kwalitatieve hardware- en softwareoplossingen, afgestemd op uw specifieke behoeften.</p>
-      </div>
-
-      <div class="service-card">
-        <img src="../pics/support-icon.png" alt="Support Subscriptions">
-        <h3>Ondersteuningsabonnementen</h3>
-        <p>Doorlopende ondersteuning voor uw software en hardware met flexibele abonnementsopties.</p>
-      </div>
-
-      <div class="service-card">
-        <img src="../pics/wrench.png" alt="Maintenance & Cleaning">
-        <h3>Onderhoud</h3>
-        <p>Professioneel Onderhoud van hardware en software om uw systemen altijd optimaal te laten werken.</p>
-      </div>
-
-      <div class="service-card">
-        <img src="../pics/network-icon.png" alt="Network Installations">
-        <h3>Netwerkinstallaties</h3>
-        <p>Uitbreiding van internetconnectiviteit, van uw thuiskantoor tot externe locaties.</p>
-      </div>
+<!-- Services content below hero with AOS -->
+<section id="Services" class="services-section" data-aos="fade-up">
+  <h2 data-aos="fade-up" data-aos-delay="100">Onze Diensten</h2>
+  <p data-aos="fade-up" data-aos-delay="200">
+    Volledige IT-oplossingen, op maat van al uw technologie behoeften
+  </p>
+  <div class="services-grid">
+    <a href="contact.html" class="service-card" data-aos="zoom-in" data-aos-delay="300">
+      <img src="pics/consulting-icon.png" alt="IT Consulting">
+      <h3>IT-advies & Consultancy</h3>
+      <p>Expert advies om u te helpen de juiste technologiekeuzes te maken, zowel voor uw bedrijf als thuisgebruik.</p>
+    </a>
+    <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+      <img src="pics/cart.png" alt="Product Sales">
+      <h3>Productverkoop</h3>
+      <p>Kwalitatieve hardware- en softwareoplossingen, afgestemd op uw specifieke behoeften.</p>
     </div>
-  </section>
+    <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+      <img src="pics/support-icon.png" alt="Support Subscriptions">
+      <h3>Ondersteuningsabonnementen</h3>
+      <p>Doorlopende ondersteuning voor uw software en hardware met flexibele abonnementsopties.</p>
+    </div>
+    <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
+      <img src="pics/wrench.png" alt="Maintenance & Cleaning">
+      <h3>Onderhoud</h3>
+      <p>Professioneel Onderhoud van hardware en software om uw systemen altijd optimaal te laten werken.</p>
+    </div>
+    <div class="service-card" data-aos="zoom-in" data-aos-delay="700">
+      <img src="pics/network-icon.png" alt="Network Installations">
+      <h3>Netwerkinstallaties</h3>
+      <p>Uitbreiding van internetconnectiviteit, van uw thuiskantoor tot externe locaties.</p>
+    </div>
+  </div>
+</section>
 
-    
-    
-    <section class="why-choose-us">
+<!-- Why choose us section with AOS --> 
+ <section class="why-choose-us">
   <div class="container">
+
+    <!-- Left column -->
     <div class="why-left">
-      <h2>Waarom voor ons kiezen?</h2>
-      <p>
-        Wij zetten ons in om betrouwbare, professionele IT-diensten te leveren die uw bedrijf én persoonlijke projecten ondersteunen.  
+      <div data-aos="fade-right" data-aos-duration="1000">
+        <h2>Waarom voor ons kiezen?</h2>
+        <p>
+          Wij zetten ons in om betrouwbare, professionele IT-diensten te leveren die uw bedrijf én persoonlijke projecten ondersteunen.  
 Ons team combineert expertise, inzet en persoonlijke service bij elk project.
-      </p>
+        </p>
 
-      <ul class="features">
-        <li>✅ Ervaren technici met jarenlange expertise</li>
-        <li>✅ Flexibele ondersteuningsplannen afgestemd op uw behoeften</li>
-        <li>✅ Snelle responstijden en betrouwbare service</li>
-        <li>✅ Concurrerende prijzen en transparante offertes</li>
-        <li>✅ Doorlopende ondersteuning en onderhoud</li>
-        <li>✅ Lokale service met persoonlijke aandacht</li>
-      </ul>
+        <ul class="features">
+          <li data-aos="fade-up" data-aos-delay="100">✅ Ervaren technici met jarenlange expertise</li>
+          <li data-aos="fade-up" data-aos-delay="200">✅ Flexibele ondersteuningsplannen afgestemd op uw behoeften</li>
+          <li data-aos="fade-up" data-aos-delay="300">✅ Snelle responstijden en betrouwbare service</li>
+          <li data-aos="fade-up" data-aos-delay="400">✅ Concurrerende prijzen en transparante offertes</li>
+          <li data-aos="fade-up" data-aos-delay="500">✅ Doorlopende ondersteuning en onderhoud</li>
+          <li data-aos="fade-up" data-aos-delay="600">✅ Lokale service met persoonlijke aandacht</li>
+        </ul>
+      </div>
     </div>
 
+    <!-- Right column -->
     <div class="why-right">
-      <h3>Klaar om uw IT-infrastructuur te verbeteren?</h3>
-      <p>
-        Van eenvoudige thuisnetwerkuitbreidingen tot uitgebreide bedrijfsoplossingen – wij helpen u op weg.
-      </p>
+      <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <h3>Klaar om uw IT-infrastructuur te verbeteren?</h3>
+        <p>
+          Van eenvoudige thuisnetwerkuitbreidingen tot uitgebreide bedrijfsoplossingen – wij helpen u op weg.
+        </p>
 
-      <ul class="highlights">
-        <li>• Mogelijkheid tot service op dezelfde dag</li>
-        <li>• Gratis eerste consultatie</li>
-        <li>• Tevredenheid gegarandeerd</li>
-      </ul>
+        <ul class="highlights">
+          <li data-aos="fade-up" data-aos-delay="700">• Mogelijkheid tot service op dezelfde dag</li>
+          <li data-aos="fade-up" data-aos-delay="800">• Gratis eerste consultatie</li>
+          <li data-aos="fade-up" data-aos-delay="900">• Tevredenheid gegarandeerd</li>
+        </ul>
+      </div>
     </div>
+
   </div>
 </section>
     
@@ -178,6 +162,7 @@ Ons team combineert expertise, inzet en persoonlijke service bij elk project.
   </div>
 </section> -->
 
+<!--
 <section id="GetStarted" class="get-in-touch">
   <div class="container">
     <h2>Neem Contact Op</h2>
@@ -217,13 +202,13 @@ Ons team combineert expertise, inzet en persoonlijke service bij elk project.
     </div>
   </div>
 </section>
-
+-->
     
     
-    
+  <!-- Language selector -->  
  <div id="floating-lang"> 
 <button class="lang-btn" data-url="../index.html" onclick="changeLanguage('../index.html')">EN</button>
-<button class="lang-btn" data-url="home.html" onclick="changeLanguage('home.html')">NL</button>
+<button class="lang-btn" data-url="index.html" onclick="changeLanguage('index.html')">NL</button>
     </div>
 
 
@@ -263,16 +248,17 @@ Ons team combineert expertise, inzet en persoonlijke service bij elk project.
   </div>
 </footer>
     <!-- End of footer -->
-  </body>
-</html>
-    
-    
-    
+
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- Custom JS files -->
 <script src="../js/mobile-search.js"></script>
 <script src="../js/navbar.js"></script>
+<!-- AOS -->
 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="../js/AOS.js"></script>
 
-
+  </body>
+</html>
 

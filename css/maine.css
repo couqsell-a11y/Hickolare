@@ -608,17 +608,56 @@ input {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  justify-items: center;
-  padding: 0 20px;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns max */
+  gap: 30px; /* space between cards */
+  max-width: 1200px; /* optional: keep the grid contained */
+  margin: 0 auto; /* center the grid */
 }
 
-.service-card .icon {
-  font-size: 40px;
-  margin-bottom: 15px;
-  color: #2b71e5; /* ensure icon is white (or blue if you want) */
+.service-card {
+  background: #fff; /* outer box color */
+  border: 1px solid #ccc; /* subtle border */
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Make sure icons are visible and sized nicely */
+.service-card .icon {
+  font-size: 50px;
+  color: #2468ed; /* your accent color */
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .service-card {
   background: #fff;

@@ -57,66 +57,62 @@
 </nav>
 <!-- End of Navbar -->
 
-<div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
-        <div class="wrapper wrapper--w680">
-            <div class="card card-4">
-                <div class="card-body">
-                    <h2 class="title">Contact Us</h2>
-                    <form method="POST">
-                        <div class="row row-space">
-                            <div class="col-6">
-                                <div class="input-group">
-                                    <label class="label">First Name</label>
-                                    <input class="input--style-4" type="text" name="first_name">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="input-group">
-                                    <label class="label">Last Name</label>
-                                    <input class="input--style-4" type="text" name="last_name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-space">
-                            <div class="col-8">
-                                <div class="input-group">
-                                    <label class="label">Email</label>
-                                    <input class="input--style-4" type="email" name="email">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="input-group">
-                                    <label class="label">Phone Number</label>
-                                    <input class="input--style-4" type="text" name="phone">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <label class="label">Subject</label><br><br><br>
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="subject">
-                                    <option disabled="disabled" selected="selected">Choose...</option>
-                                    <option>IT Support</option>
-                                    <option>Network Setup</option>
-                                    <option>Quote Request</option>
-                                    <option>Other</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <label class="label">Message</label>
-                            <textarea class="input--style-4" name="message" rows="4" placeholder="Tell us about your IT needs..."></textarea>
-                        </div>
-                        <div class="p-t-15">
-                            <a class="btn btn--radius-2 btn--blue" href="bedankt.html"></a>
-                            <button formaction="Thanks.html" class="btn btn--radius-2 btn--blue" type="submit" >Send Message</button>
-                        </div>
-                    </form>
-                </div>
+<section id="GetStarted" class="get-in-touch">
+    <div class="container">
+      <h2>Neem Contact Op</h2>
+
+      <div class="contact-single">
+        <div class="contact-form">
+          <h3>Stuur ons een bericht</h3>
+          <p>Vul onderstaand formulier in en wij reageren binnen 24 uur.</p>
+
+          <form id="contactForm" novalidate>
+            <label for="bedrijf">Bedrijfsnaam</label>
+            <input type="text" id="bedrijf" name="bedrijf" placeholder="Bedrijfsnaam" />
+
+            <div class="row">
+              <div class="col">
+                <label for="voornaam">Voornaam <span class="required">(Verplicht)</span></label>
+                <input type="text" id="voornaam" name="voornaam" required placeholder="Voornaam" />
+              </div>
+              <div class="col">
+                <label for="familienaam">Familienaam <span class="required">(Verplicht)</span></label>
+                <input type="text" id="familienaam" name="familienaam" required placeholder="Familienaam" />
+              </div>
             </div>
+
+            <label>Adres <span class="required">(Verplicht)</span></label>
+            <div class="row row-address">
+              <input type="text" id="straat" name="straat" placeholder="Straat" required class="flex-input" />
+              <input type="text" id="nummer" name="nummer" placeholder="Nr" required class="small-input" />
+            </div>
+
+            <label>Gemeente <span class="required">(Verplicht)</span></label>
+            <div class="row row-address">
+              <input type="text" id="postcode" name="postcode" placeholder="Postcode" required class="small-input" />
+              <input type="text" id="gemeente" name="gemeente" placeholder="Gemeente" required class="flex-input" />
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="email">E-mail <span class="required">(Verplicht)</span></label>
+                <input type="email" id="email" name="email" required placeholder="E-mailadres" />
+              </div>
+              <div class="col">
+                <label for="telefoon">Telefoon</label>
+                <input type="tel" id="telefoon" name="telefoon" placeholder="Telefoon" />
+              </div>
+            </div>
+
+            <label for="bericht">Jouw bericht <span class="required">(Verplicht)</span></label>
+            <textarea id="bericht" name="bericht" required placeholder="Je bericht"></textarea>
+
+            <button type="submit" class="btn-submit">Verzend Bericht</button>
+          </form>
         </div>
+      </div>
     </div>
+  </section>
 
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>

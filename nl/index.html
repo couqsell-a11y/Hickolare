@@ -15,60 +15,132 @@
   
   <body>
 <!-- Navbar -->
+
 <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top px-4">
   <a class="navbar-brand" href="#">
     <img src="../pics/Logo.png" alt="Logo" width="150" height="50">
   </a>
-<!-- Right navbar toggler (menu button only) -->
-<div class="d-flex align-items-center">
+
+  <!-- Right navbar toggler (menu button) -->
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-</div>
+
   <!-- Collapsible menu -->
   <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
     <ul class="navbar-nav text-center ms-auto">
-      <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
-      <li class="nav-item"><a class="nav-link" href="Pricing.html">Pricing</a></li>
-      <li class="nav-item"><a class="nav-link" href="Products.html">Products</a></li>
+
+           <!-- DROPDOWN MENU  -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dienstenDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Diensten
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end p-3 shadow-lg border-0 rounded-3" aria-labelledby="dienstenDropdown" style="min-width: 250px;">
+          <li>
+            <div class="fw-bold text-primary mb-2">Infrastructuur</div>
+            <a class="dropdown-item" href="verkoop-van-it-hardware/index.html">Verkoop van hardware</a>
+            <a class="dropdown-item" href="netwerkbeheer-van-jouw-kmo/index.html">Netwerken</a>
+            <a class="dropdown-item" href="webhosting-voor-jouw-bedrijfswebsite/index.html">Domeinen en hosting</a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <div class="fw-bold text-primary mb-2">Cloud</div>
+            <a class="dropdown-item" href="overschakelen-naar-microsoft-365-met-jouw-bedrijf/index.html">Microsoft 365</a>
+            <a class="dropdown-item" href="samenwerken-met-microsoft-teams/index.html">Microsoft Teams</a>
+            <a class="dropdown-item" href="voip-telefonie/index.html">VOIP Telefonie</a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <div class="fw-bold text-primary mb-2">Beveiliging</div>
+            <a class="dropdown-item" href="backup-van-jouw-kostbare-bedrijfsgegevens/index.html">Backup van gegevens</a>
+            <a class="dropdown-item" href="cyberbeveiliging/index.html">Cyberbeveiliging</a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <div class="fw-bold text-primary mb-2">Ondersteuning</div>
+            <a class="dropdown-item" href="it-ondersteuning-op-maat/index.html">IT Ondersteuning</a>
+            <a class="dropdown-item" href="it-advies-op-maat/index.html">IT Advies</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a class="nav-link" href="Projects.html">Over ons</a></li>
+      <li class="nav-item"><a class="nav-link" href="Pricing.html">Partners</a></li>
+      <li class="nav-item"><a class="nav-link" href="Products.html">Referenties</a></li>
       <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
     </ul>
   </div>
-  <!-- Mobile search bar 
-  <div class="mobile-search d-lg-none">
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Zoeken..." aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Zoek</button>
-    </form>
-  </div>
--->
 </nav>
-<!-- End of Navbar -->
-  
-<!-- Hero Section -->
-<section class="hero-section d-flex align-items-center text-white">
-  <div class="container text-center hero-content-wrapper">
 
-    <div class="hero-slide active">
-      <h1 class="display-4 fw-bold hero-heading">Professionele IT-oplossingen voor bedrijven én particulieren</h1>
-      <p class="lead mt-3 mb-4 hero-paragraph">
-        Betrouwbaar advies, hardware- en softwareoplossingen, netwerkinstallaties en onderhouds- of ondersteuningsabonnementen.
-        Wij zorgen ervoor dat uw technologie altijd vlot en zorgeloos blijft werken.
-      </p>
-      <div class="hero-buttons">
-        <a href="it-advies-op-maat.html#GetStarted" class="btn btn-primary btn-lg me-2">Aan de slag →</a>
-        <a href="#Services" class="btn btn-outline-light btn-lg">Onze Diensten</a>
+
+
+<!-- Hero Section -->
+<section id="heroSection" class="hero-section d-flex align-items-center text-white">
+  <div id="heroCarousel" class="container text-center hero-content-wrapper carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="8000">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="hero-slide">
+        <h1 class="display-4 fw-bold hero-heading animate__animated animate__fadeInDown">
+          Professionele IT-oplossingen voor bedrijven én particulieren
+        </h1>
+        <p class="lead mt-3 mb-4 hero-paragraph animate__animated animate__fadeInUp">
+          Betrouwbaar advies, hardware- en softwareoplossingen, netwerkinstallaties en onderhouds- of ondersteuningsabonnementen.
+          Wij zorgen ervoor dat uw technologie altijd vlot en zorgeloos blijft werken.
+        </p>
+        <div class="hero-buttons animate__animated animate__fadeInUp">
+          <a href="it-advies-op-maat.html#GetStarted" class="btn btn-primary btn-lg me-2">Aan de slag →</a>
+          <a href="#Services" class="btn btn-outline-light btn-lg">Onze Diensten</a>
+        </div>
       </div>
     </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="hero-slide">
+        <h1 class="display-4 fw-bold hero-heading animate__animated animate__fadeInDown">
+          Uw <span class="text-primary">betrouwbare IT-partner</span> voor bedrijfscontinuïteit
+        </h1>
+        <p class="lead mt-3 mb-4 hero-paragraph animate__animated animate__fadeInUp">
+          Van advies tot volledige IT-ontzorging — wij leveren duurzame oplossingen voor zowel KMO’s als zelfstandigen.
+        </p>
+        <div class="hero-buttons animate__animated animate__fadeInUp">
+          <a href="#Services" class="btn btn-primary btn-lg me-2">Bekijk diensten</a>
+          <a href="contact.html" class="btn btn-outline-light btn-lg">Contacteer ons</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="hero-slide">
+        <h1 class="display-4 fw-bold hero-heading animate__animated animate__fadeInDown">
+          <span class="text-primary">IT-oplossingen</span> op maat van uw bedrijf
+        </h1>
+        <p class="lead mt-3 mb-4 hero-paragraph animate__animated animate__fadeInUp">
+          Wij zorgen dat uw systemen veilig, snel en betrouwbaar blijven — vandaag én morgen.
+        </p>
+        <div class="hero-buttons animate__animated animate__fadeInUp">
+          <a href="Pricing.html" class="btn btn-primary btn-lg me-2">Bekijk prijzen</a>
+          <a href="#Services" class="btn btn-outline-light btn-lg">Ontdek meer</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+  <!-- Controls -->
+<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Vorige</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Volgende</span>
+</button>
+
   </div>
-
-    
 </section>
-
-
-
 
 
 

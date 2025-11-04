@@ -2103,4 +2103,150 @@ body {
 }
 
 
-/* Arrows */
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #f3f8fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #68A4C4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.section-title p {
+  margin-bottom: 0;
+}
+.section-title .subtitle
+{
+  color: #f9c22e;
+  font-family: "Montserrat",Tahoma,Sans-Serif;
+  font-size: .9em;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  letter-spacing: -.2px;
+    /*
+  text-transform: uppercase;
+  font-size: 16px;*/
+}
+.section-subtitle {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.section-subtitle h4 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-subtitle h4::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-subtitle h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #68A4C4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.section-subtitle p {
+  margin-bottom: 0;
+}
+/* Boxicons base */
+.bx {
+  font-size: 48px;        /* size of the icon */
+  display: inline-block;
+  vertical-align: middle;
+  transition: color 0.3s ease, transform 0.3s ease; /* optional hover effects */
+}
+
+/* Icon container */
+.icon {
+  text-align: center;
+  margin-bottom: 15px;   /* spacing between icon and title */
+}
+
+/* Icon box color theme */
+.icon-box-blue .icon i {
+  color: #1e90ff;        /* main color for blue theme */
+}
+
+/* Optional hover effect */
+.icon-box:hover .icon i {
+  color: #f4b23d;        /* change color on hover */
+  transform: scale(1.1); /* subtle zoom effect */
+}
+
+/* Icon box alignment and padding */
+.icon-box {
+  padding: 20px;
+  border-radius: 12px;
+  background: #f0f8ff;   /* light background */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles inside icon boxes */
+.icon-box .title {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Descriptions */
+.icon-box .description {
+  font-size: 14px;
+  color: #555;
+}
+
+
+

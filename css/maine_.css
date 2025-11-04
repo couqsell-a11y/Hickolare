@@ -229,6 +229,7 @@ input {
   background: linear-gradient(to right, #6c5ce7, #00b894);
   color: #fff;
   padding: 0 20px;
+  height: 100%;
 }
 
 /* Hero Section with background image and fade */
@@ -1244,7 +1245,6 @@ body {
    Intro Section Styling
    ============================== */
 .intro-section {
-  margin-top: 0px;
   background-color: rgba(0, 32, 49, 0.81); /* light gray-blue background */
   padding: 60px 20px 80px 20px; /* top, right/left, bottom padding */
   text-align: left;
@@ -1353,8 +1353,6 @@ body {
     Arial;
   background: var(--bg);
   color: #222;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Container */
@@ -1591,6 +1589,7 @@ body {
 
 .hero-heading span {
   color: #f4b23d !important;
+  
 }
 
 
@@ -1610,25 +1609,6 @@ body {
 }
 
 /* Keep hero text centered and prevent overlap with arrows */
-.hero-content-wrapper {
-  position: relative;
-  padding: 0 8rem; /* was 4rem — increase to 8rem to push text away from arrows */
-  z-index: 3;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-@media (max-width: 992px) {
-  .hero-content-wrapper {
-    padding: 0 3rem; /* reduce padding on tablets */
-  }
-}
-
-@media (max-width: 576px) {
-  .hero-content-wrapper {
-    padding: 0 1.5rem; /* smaller padding for mobile */
-  }
-}
 
 
 .carousel-control-prev,
@@ -2316,5 +2296,48 @@ section {
   margin-bottom: 15px;
   color: #007BFF; /* ensure icon is white (or blue if you want) */
 }
+/* Center hero text horizontally on mobile */
+/* Fix hero layout on mobile */
+/* === Fix hero layout & text scaling on mobile === */
+@media (max-width: 768px) {
+  #heroSection,
+  #heroSection .carousel-item,
+  #heroSection .hero-slide {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center !important;
+    min-height: 100vh;
+    padding: 100px 20px 60px; /* Top spacing to avoid navbar overlap */
+  }
+
+  #heroSection .hero-slide h1 {
+    font-size: clamp(1.4rem, 5vw, 2rem); /* adjusts smoothly with screen size */
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    text-align: center !important;
+    width: 100%;
+  }
+
+  #heroSection .hero-slide p {
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+    line-height: 1.5;
+    text-align: center !important;
+    max-width: 90%;
+    margin: 0 auto 1.5rem;
+  }
+
+  #heroSection .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+
+
+
 
 

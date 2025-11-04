@@ -692,9 +692,6 @@ input {
     margin: 15px 0;
   }
 
-  .footer-section h3 {
-    font-size: 16px;
-  }
 
   .footer-section p, 
   .footer-section ul li a {
@@ -764,7 +761,7 @@ input {
 /* Icon container */
 .icon {
   text-align: center;
-  margin-bottom15px;   /* spacing between icon and title */
+  margin-bottom: 15px;   /* spacing between icon and title */
 }
 
 /* Icon box color theme */
@@ -809,7 +806,7 @@ input {
 .footer {
   background-color: #0b47a1;
   color: white;
-  padding: 40px 0 20px;
+  padding: 40px 40px 20px;
   font-family: Arial, sans-serif;
 }
 
@@ -832,6 +829,7 @@ input {
 .footer-section h3 {
   font-size: 18px;
   margin-bottom: 10px;
+  color: #f9c22e
 }
 
 .footer-section p {
@@ -961,3 +959,237 @@ input {
 .info-box strong {
   color: #1f2937;
 }
+
+/*------------------------------------------------------------
+ *                       # Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #0b212d;
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+#footer .footer-regio {
+  padding: 50px 0;
+  background: #f9c22e;
+  color: #1e4356;
+  display: flex;           /* enable flex layout */
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically if you want */
+  text-align: center;      /* fallback for inline text */
+  flex-direction: column;  /* stack children vertically */
+}
+#footer .footer-regio h4 {
+  font-size: 20px;
+  margin: 0;
+  padding-top: 10px;
+  font-weight: 600;
+  color: #1e4356;
+}
+
+.footer-quote {
+  text-align: center;        /* centers inline/inline-block elements inside */
+  display: flex;             /* makes it a flex container */
+  flex-direction: column;    /* stack h2 and p vertically */
+  justify-content: center;   /* vertical centering if needed */
+  align-items: center;       /* horizontal centering */
+  padding: 40px 20px;        /* optional spacing around the section */
+}
+
+
+.footer-quote h2,
+.footer-quote p {
+  margin: 0 0 10px 0;        /* remove default margins for clean centering */
+}
+
+.footer-quote span.quote {
+  display: inline-block;     /* allows alignment inside flex */
+}
+
+
+#footer .footer-regio span.quote {
+  display: inline-block;       /* make the span a block element */
+  text-align: center;   /* center the text horizontally */
+  padding: 0;           /* remove existing padding */
+  margin: 0 auto;       /* ensure proper centering */
+}
+
+#footer .footer-regio-toelichting 
+{
+  padding-top: 30px;
+}
+#footer .footer-calltoaction {
+  padding: 50px 0;
+  background: #f9c22e;
+}
+#footer .footer-calltoaction h2 {
+  font-size: 20px;
+  margin: 0;
+  padding-top: 10px;
+  /*line-height: 1;*/
+  font-weight: 600;
+  color: #1e4356;
+}
+#footer .footer-calltoaction a.button {
+  float: right;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 5px 20px;
+  margin: 3px;
+  background: #1e4356;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+@media (max-width: 991px) {
+  #footer .footer-calltoaction {
+    text-align: center;
+  }
+  #footer .footer-calltoaction a.button {
+    float: unset;
+  }
+  #footer .footer-calltoaction .ctabutton {
+    margin-top: 30px;
+  }
+}
+#footer .footer-calltoaction a.button:hover {
+  background: #68A4C4;
+}
+#footer .footer-top {
+  background: #0d2735;
+  border-top: 1px solid #17455e;
+  border-bottom: 1px solid #123649;
+  padding: 60px 0 30px 0;
+}
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-info h3 {
+  font-size: 18px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  color: #f9c22e;
+  font-weight: 600;
+}
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  /*line-height: 24px;*/
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #1e4356;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+#footer .footer-top .social-links a:hover {
+  background: #68A4C4;
+  color: #fff;
+  text-decoration: none;
+}
+#footer .footer-top .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f9c22e;
+  position: relative;
+  padding-bottom: 12px;
+}
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0 0 30px 0;
+  margin: 0;
+}
+.footer-links a:hover, .footer-links ul a.active {
+  color: #f9c22e !important;
+}
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #a2cce3;
+  font-size: 18px;
+  line-height: 1;
+}
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+#footer .footer-top .footer-links ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+#footer .footer-top .footer-links ul a:hover {
+  color: #f9c22e;
+}
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+#footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+#footer .credits a {
+  color: #f9c22e;
+}
+
+.support .container {
+  box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+  background: #fff;
+}
+.support ul {
+  list-style: none;
+  padding: 0;
+}
+.support ul li {
+  padding-bottom: 6px;
+}
+.support ul i {
+  font-size: 18px;
+  padding-right: 4px;
+  color: #68A4C4;
+}
+
+/*test*/
+
+#footer .footer-links ul li i {
+  color: #f9c22e;      /* yellow arrow color */
+  font-size: 12px;     /* small arrow */
+  margin-right: 6px;   /* space between arrow and link text */
+  vertical-align: middle;
+}
+
+/* Optional: hover effect on icon too */
+#footer .footer-links ul li a:hover i {
+  color: #fff;
+}
+
+
+
+
+/* end of test */
+

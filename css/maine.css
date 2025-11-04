@@ -1961,6 +1961,31 @@ body {
   animation-fill-mode: both;
 }
 
+@keyframes slideFromTopLoop {
+  0%   { opacity: 0; transform: translateY(-30px); }
+  3%   { opacity: 1; transform: translateY(0); }     /* fade in faster */
+  90%  { opacity: 1; transform: translateY(0); }
+  93%  { opacity: 0; transform: translateY(-30px); } /* fade out faster */
+  100% { opacity: 0; transform: translateY(-30px); }
+}
+
+@keyframes slideFromBottomLoop {
+  0%   { opacity: 0; transform: translateY(30px); }
+  3%   { opacity: 1; transform: translateY(0); }
+  90%  { opacity: 1; transform: translateY(0); }
+  93%  { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 0; transform: translateY(30px); }
+}
+
+@keyframes fadeScaleLoop {
+  0%   { opacity: 0; transform: scale(0.95); }
+  3%   { opacity: 1; transform: scale(1); }
+  90%  { opacity: 1; transform: scale(1); }
+  93%  { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 0; transform: scale(0.95); }
+}
+
+
 .hero-buttons {
   display: flex;
   justify-content: center;

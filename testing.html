@@ -97,44 +97,6 @@
 
 <!-- Example content below hero -->
 
-  <section id="Services" class="services-section" data-aos="fade-up">
-  <h2 data-aos="fade-up" data-aos-delay="100">Our Services</h2>
-  <p data-aos="fade-up" data-aos-delay="200">
-    Comprehensive IT solutions designed to meet all your technology needs
-  </p>
-
-  <div class="services-grid">
-    <a href="contact.html" class="service-card" data-aos="zoom-in" data-aos-delay="300">
-      <img src="pics/consulting-icon.png" alt="IT Consulting">
-      <h3>IT Consulting & Advisory</h3>
-      <p>Expert guidance to help you make informed technology decisions for your business growth.</p>
-    </a>
-
-    <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
-      <img src="pics/cart.png" alt="Product Sales">
-      <h3>Product Sales</h3>
-      <p>Quality hardware and software solutions tailored to your specific business needs.</p>
-    </div>
-
-    <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
-      <img src="pics/support-icon.png" alt="Support Subscriptions">
-      <h3>Support Subscriptions</h3>
-      <p>Comprehensive ongoing support for your software and hardware with flexible subscription plans.</p>
-    </div>
-
-    <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
-      <img src="pics/wrench.png" alt="Maintenance & Cleaning">
-      <h3>Maintenance & Cleaning</h3>
-      <p>Professional physical maintenance and cleaning services to keep your equipment in peak condition.</p>
-    </div>
-
-    <div class="service-card" data-aos="zoom-in" data-aos-delay="700">
-      <img src="pics/network-icon.png" alt="Network Installations">
-      <h3>Network Installations</h3>
-      <p>Extend your internet connectivity anywhere — from your home office to your backyard shed.</p>
-    </div>
-  </div>
-</section>
 
 
     <section id="Services" class="services-section" data-aos="fade-up">
@@ -145,37 +107,39 @@
 
   <div class="services-grid">
     
-    <a href="consulting.html" class="service-card" data-aos="zoom-in" data-aos-delay="150">
-      <img src="../pics/consulting-icon.png" alt="IT Consulting">
+    <a href="nl/it-advies-op-maat.html" class="service-card" data-aos="zoom-in" data-aos-delay="150">
+      <img src="pics/consulting-icon.png" alt="IT Consulting">
       <h3>IT Consulting & Advisory</h3>
       <p>Expert guidance to help you make informed technology decisions for your business growth.</p>
     </a>
 
     <a href="products.html" class="service-card" data-aos="zoom-in" data-aos-delay="200">
-      <img src="../pics/cart.png" alt="Product Sales">
+      <img src="pics/cart.png" alt="Product Sales">
       <h3>Product Sales</h3>
       <p>Quality hardware and software solutions tailored to your specific business needs.</p>
     </a>
 
     <a href="support.html" class="service-card" data-aos="zoom-in" data-aos-delay="250">
-      <img src="../pics/support-icon.png" alt="Support Subscriptions">
+      <img src="pics/support-icon.png" alt="Support Subscriptions">
       <h3>Support Subscriptions</h3>
       <p>Comprehensive ongoing support for your software and hardware with flexible subscription plans.</p>
     </a>
 
     <a href="maintenance.html" class="service-card" data-aos="zoom-in" data-aos-delay="300">
-      <img src="../pics/wrench.png" alt="Maintenance & Cleaning">
+      <img src="pics/wrench.png" alt="Maintenance & Cleaning">
       <h3>Maintenance & Cleaning</h3>
       <p>Professional maintenance and cleaning for both hardware and software to keep your systems in top condition.</p>
     </a>
 
     <a href="network.html" class="service-card" data-aos="zoom-in" data-aos-delay="350">
-      <img src="../pics/network-icon.png" alt="Network Installations">
+      <img src="pics/network-icon.png" alt="Network Installations">
       <h3>Network Installations</h3>
       <p>Extend your internet connectivity anywhere — from your home office to your backyard shed.</p>
     </a>
   </div>
 </section>
+    
+
 
     
 <section class="why-choose-us">
@@ -245,6 +209,86 @@
     </div>
   </div>
 </section> -->
+<section id="GetStarted" class="get-in-touch">
+  <div class="container">
+    <h2>Neem Contact Op</h2>
+    
+    <div class="contact-grid">
+      <!-- Left side: Contact form -->
+      <div class="contact-form">
+        <h3>Stuur ons een bericht</h3>
+        <p>Vul onderstaand formulier in en wij reageren binnen 24 uur.</p>
+
+        <form>
+          <label for="bedrijf">Bedrijfsnaam</label>
+          <input type="text" id="bedrijf" placeholder="Bedrijfsnaam">
+
+          <div class="row">
+            <div>
+              <label for="voornaam">Voornaam (Verplicht)</label>
+              <input type="text" id="voornaam" required placeholder="Voornaam">
+            </div>
+            <div>
+              <label for="familienaam">Familienaam (Verplicht)</label>
+              <input type="text" id="familienaam" required placeholder="Familienaam">
+            </div>
+          </div>
+
+          <label for="adres">Adres (Verplicht)</label>
+          <div class="row">
+            <input type="text" id="straat" placeholder="Straat" required>
+            <input type="text" id="nummer" placeholder="Nr" required>
+          </div>
+
+          <label for="gemeente">Gemeente (Verplicht)</label>
+          <div class="row">
+            <input type="text" id="postcode" placeholder="Postcode" required>
+            <input type="text" id="gemeente" placeholder="Gemeente" required>
+          </div>
+
+          <div class="row">
+            <div>
+              <label for="email">E-mail (Verplicht)</label>
+              <input type="email" id="email" placeholder="E-mailadres" required>
+            </div>
+            <div>
+              <label for="telefoon">Telefoon</label>
+              <input type="tel" id="telefoon" placeholder="Telefoon">
+            </div>
+          </div>
+
+          <label for="bericht">Jouw bericht (Verplicht)</label>
+          <textarea id="bericht" required placeholder="Je bericht"></textarea>
+
+          <button type="submit">Verzend Bericht</button>
+        </form>
+      </div>
+
+      <!-- Right side: Contact info -->
+      <div class="contact-info">
+        <div class="info-box">
+          <h4>📞 Telefoon</h4>
+          <p>Bel ons tijdens de kantooruren (7.00u tot 18.00u)</p>
+          <p><strong>+1 (555) 123-4567</strong></p>
+        </div>
+
+        <div class="info-box">
+          <h4>📧 Email</h4>
+          <p>Wij reageren binnen 24 uur</p>
+          <p><strong>info@Hicko-it.com</strong></p>
+        </div>
+
+        <div class="info-box">
+          <h4>📍 Locatie</h4>
+          <p>Wij bedienen de regio</p>
+          <p><strong>Vlaanderen</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="scrollTopBtn" title="Naar boven">&#8679;</button>
+</section>
 
     
     <!-- Start Footer -->

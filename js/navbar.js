@@ -64,4 +64,50 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Scroll to Top Button behaviour
+(function () {
+  const btn = document.getElementById('scrollTopBtn');
+
+  // Show button when scrolled down
+  function checkScroll() {
+    const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrolled > 120) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  }
+
+  // Smooth scroll to top
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  window.addEventListener('scroll', checkScroll);
+  // run once in case page is already scrolled
+  checkScroll();
+
+  // Optional: simple client-side validation + prevent default submit (demo)
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function (e) {
+    if (!form.checkValidity()) {
+      // Let browser show built-in validation UI
+      return;
+    }
+    e.preventDefault();
+    // TODO: submit via AJAX / Formspree / backend
+    alert('Formulier succesvol ingediend (demo).');
+    form.reset();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+
+/* test */
+
+
+
+
+
+
+
 

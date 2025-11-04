@@ -2299,42 +2299,48 @@ section {
 /* Center hero text horizontally on mobile */
 /* Fix hero layout on mobile */
 /* === Fix hero layout & text scaling on mobile === */
+/* Hero section full center on mobile */
 @media (max-width: 768px) {
-  #heroSection,
-  #heroSection .carousel-item,
-  #heroSection .hero-slide {
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center !important;
-    min-height: 100vh;
-    padding: 100px 20px 60px; /* Top spacing to avoid navbar overlap */
+  #heroSection {
+    min-height: 100vh;           /* full viewport height */
+    display: flex !important;     /* override any bootstrap flex issues */
+    flex-direction: column;       /* stack items vertically */
+    justify-content: center !important; /* vertical center */
+    align-items: center !important;     /* horizontal center */
+    text-align: center;           /* center text */
+    padding: 0 15px;              /* small side padding */
   }
 
-  #heroSection .hero-slide h1 {
-    font-size: clamp(1.4rem, 5vw, 2rem); /* adjusts smoothly with screen size */
-    line-height: 1.3;
-    margin-bottom: 1rem;
-    text-align: center !important;
-    width: 100%;
+  #heroSection .hero-content-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 auto;
   }
 
+  #heroSection .hero-slide h1,
   #heroSection .hero-slide p {
-    font-size: clamp(0.9rem, 4vw, 1.1rem);
-    line-height: 1.5;
-    text-align: center !important;
     max-width: 90%;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 1rem;          /* center text and add spacing */
+    text-align: center;
   }
 
   #heroSection .hero-buttons {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
+  }
+
+  #heroCarousel .carousel-inner,
+  #heroCarousel .carousel-item {
+    height: 100%;                 /* make carousel items fill heroSection */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;       /* center content vertically */
+    align-items: center;           /* center horizontally */
   }
 }
+
 
 
 

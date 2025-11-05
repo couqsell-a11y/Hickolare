@@ -597,7 +597,7 @@ input {
 /* Adjust hero spacing and text on mobile */
 @media (max-width: 576px) {
   #heroSection {
-    padding-top: 120px; /* add space below navbar */
+    padding-top: 100px; /* add space below navbar */
     text-align: center;
   }
 

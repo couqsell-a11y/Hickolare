@@ -1,4 +1,5 @@
-/* Body padding to prevent navbar overlap */
+
+    /* Body padding to prevent navbar overlap */
     body {
       font-family: "Poppins", "Arial", sans-serif;
       padding-top: 70px; /* Adjust to your navbar height */

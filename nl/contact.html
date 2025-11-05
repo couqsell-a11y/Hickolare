@@ -155,7 +155,7 @@
           </div>
           <div class="col-md-6">
             <label for="telefoon">Telefoon</label>
-            <input type="tel" id="telefoon" name="telefoon" placeholder="Telefoon" />
+            <input type="tel" id="telefoon" name="telefoon" placeholder="Telefoon" pattern="[0-9]{10}" />
           </div>
         </div>
 
@@ -178,13 +178,7 @@
           <textarea id="bericht" name="bericht" rows="6" placeholder="Je bericht" required></textarea>
         </div>
 
-        <p class="recaptcha-info">
-          Deze website wordt beschermd door reCAPTCHA: het 
-          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">privacybeleid</a> 
-          en de 
-          <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">servicevoorwaarden</a> 
-          van Google zijn van toepassing.
-        </p>
+        
 
         <button type="submit" class="submit-btn">Verzenden</button>
         </div>

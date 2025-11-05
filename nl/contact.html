@@ -18,31 +18,64 @@
   
   </head>
 <body>
-  <!-- Navbar -->
-  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm px-4">
-    <a class="navbar-brand" href="#">
-      <img src="../pics/Logo.png" alt="Logo" width="150" height="50" />
-    </a>
-    <button class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<!-- Navbar -->
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
-      <ul class="navbar-nav ms-auto text-center">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="Pricing.html">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link" href="Products.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top px-4">
+  <a class="navbar-brand" href="index.html" style="cursor: pointer;">
+    <img src="../pics/Logo.png" alt="Logo" width="150" height="50">
+  </a>
+
+  <!-- Right navbar toggler (menu button) -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible menu -->
+  <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+    <ul class="navbar-nav text-center ms-auto">
+
+           <!-- DROPDOWN MENU  -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dienstenDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Diensten
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end p-3 shadow-lg border-0 rounded-3" aria-labelledby="dienstenDropdown" style="min-width: 250px;">
+          <li>
+            <div class="fw-bold text-primary mb-2">Infrastructuur</div>
+            <a class="dropdown-item" href="verkoop-van-it-hardware/index.html">Verkoop van hardware</a>
+            <a class="dropdown-item" href="netwerkbeheer-van-jouw-kmo/index.html">Netwerken</a>
+            <a class="dropdown-item" href="webhosting-voor-jouw-bedrijfswebsite/index.html">Domeinen en hosting</a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <div class="fw-bold text-primary mb-2">Cloud</div>
+            <a class="dropdown-item" href="overschakelen-naar-microsoft-365-met-jouw-bedrijf/index.html">Microsoft 365</a>
+            <a class="dropdown-item" href="samenwerken-met-microsoft-teams/index.html">Microsoft Teams</a>
+            <a class="dropdown-item" href="voip-telefonie/index.html">VOIP Telefonie</a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <div class="fw-bold text-primary mb-2">Beveiliging</div>
+            <a class="dropdown-item" href="backup-van-jouw-kostbare-bedrijfsgegevens/index.html">Backup van gegevens</a>
+            <a class="dropdown-item" href="cyberbeveiliging/index.html">Cyberbeveiliging</a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <div class="fw-bold text-primary mb-2">Ondersteuning</div>
+            <a class="dropdown-item" href="it-ondersteuning-op-maat/index.html">IT Ondersteuning</a>
+            <a class="dropdown-item" href="it-advies-op-maat/index.html">IT Advies</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a class="nav-link" href="Projects.html">Over ons</a></li>
+      <li class="nav-item"><a class="nav-link" href="Pricing.html">Partners</a></li>
+      <li class="nav-item"><a class="nav-link" href="Products.html">Referenties</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
   <!-- Neutrale hero-sectie -->
 <section class="hero-neutral">

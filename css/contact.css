@@ -2,7 +2,7 @@
     /* Body padding to prevent navbar overlap */
     body {
       font-family: "Poppins", "Arial", sans-serif;
-      padding-top: 70px; /* Adjust to your navbar height */
+      padding-top: 100px; /* Adjust to your navbar height */
       background-color: #f9fafb;
       margin: 0;
       min-height: 100vh;
@@ -128,3 +128,7 @@
         border-radius: 0;
       }
     }
+  body, html {
+  margin: 0;
+  padding: 0;
+}

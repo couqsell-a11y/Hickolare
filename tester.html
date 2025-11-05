@@ -1,184 +1,252 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hicko-IT - Contact</title>
-
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Animate on Scroll Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!-- Google Fonts for Poppins (matches your CSS) -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-  
-    <link href="css/maine.css" rel="stylesheet"/>
-    <link href="css/contact.css" rel="stylesheet"/>
-
-  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/maine.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm px-4">
-    <a class="navbar-brand" href="#">
-      <img src="../pics/Logo.png" alt="Logo" width="150" height="50" />
-    </a>
-    <button class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<!-- Navbar -->
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
-      <ul class="navbar-nav ms-auto text-center">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="Pricing.html">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link" href="Products.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top px-4">
+  <a class="navbar-brand" href="index.html" style="cursor: pointer;">
+    <img src="../pics/Logo.png" alt="Logo" width="150" height="50">
+  </a>
+
+  <!-- Right navbar toggler (menu button) -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible menu -->
+  <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+    <ul class="navbar-nav text-center ms-auto">
+
+           <!-- DROPDOWN MENU  -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dienstenDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Services
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end p-3 shadow-lg border-0 rounded-3" aria-labelledby="dienstenDropdown" style="min-width: 250px;">
+          <li>
+            <div class="fw-bold text-primary mb-2">Infrastructure</div>
+            <a class="dropdown-item" href="verkoop-van-it-hardware/index.html">Hardware</a>
+            <a class="dropdown-item" href="netwerkbeheer-van-jouw-kmo/index.html">Network</a>
+            <a class="dropdown-item" href="webhosting-voor-jouw-bedrijfswebsite/index.html">Domain and hosting</a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <div class="fw-bold text-primary mb-2">Cloud</div>
+            <a class="dropdown-item" href="overschakelen-naar-microsoft-365-met-jouw-bedrijf/index.html">Microsoft 365</a>
+            <a class="dropdown-item" href="samenwerken-met-microsoft-teams/index.html">Microsoft Teams</a>
+            <a class="dropdown-item" href="voip-telefonie/index.html">VOIP Phone system</a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <div class="fw-bold text-primary mb-2">Security</div>
+            <a class="dropdown-item" href="backup-van-jouw-kostbare-bedrijfsgegevens/index.html">Data backup</a>
+            <a class="dropdown-item" href="cyberbeveiliging/index.html">Cybersecurity</a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <div class="fw-bold text-primary mb-2">Support</div>
+            <a class="dropdown-item" href="it-ondersteuning-op-maat/index.html">IT Support</a>
+            <a class="dropdown-item" href="it-advies-op-maat/index.html">IT Consultancy</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a class="nav-link" href="Projects.html">Over ons</a></li>
+      <li class="nav-item"><a class="nav-link" href="Pricing.html">Partners</a></li>
+      <li class="nav-item"><a class="nav-link" href="Products.html">Referenties</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <!-- Contact Section -->
+<div class="contact-intro py-5">
+  <div class="row align-items-center">
+    <!-- Left column: Text -->
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <p class="text-warning fw-bold small">CONTACT DETAILS</p>
+      <h1 class="display-5 fw-bold">Get in Touch</h1>
+      <p class="lead">
+        Are you looking for a reliable IT partner to help grow your SME? 
+        Do you want to discuss your next project with us, or need a new computer? 
+        Contact Hicko IT for a first consultation, free of obligation!
+      </p>
+      <a href="#contactForm" class="text-primary">Go to the form →</a>
     </div>
-  </nav>
+  </div>
+</div>
 
+
+    
   <!-- Page Wrapper -->
   <div class="page-wrapper">
     <!-- Contact Form -->
     <main class="form-wrapper">
       <form action="#" method="post" novalidate>
         <div class="mb-4">
-          <label for="bedrijf">Bedrijfsnaam</label>
-          <input type="text" id="bedrijf" name="bedrijf" placeholder="Bedrijfsnaam" />
+          <label for="bedrijf">Company Name</label>
+          <input type="text" id="bedrijf" name="bedrijf" placeholder="Company Name" />
         </div>
 
         <div class="row g-3 mb-4">
           <div class="col-md-6">
-            <label for="voornaam">Voornaam <span class="required">(Verplicht)</span></label>
-            <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" required />
+            <label for="voornaam">First Name <span class="required">(Required)</span></label>
+            <input type="text" id="voornaam" name="voornaam" placeholder="First Name" required />
           </div>
           <div class="col-md-6">
-            <label for="familienaam">Familienaam <span class="required">(Verplicht)</span></label>
-            <input type="text" id="familienaam" name="familienaam" placeholder="Familienaam" required />
+            <label for="familienaam">Last Name <span class="required">(Required)</span></label>
+            <input type="text" id="familienaam" name="familienaam" placeholder="Last Name" required />
           </div>
         </div>
 
        <div class="row g-3 mb-4 align-items-end">
- <!-- Straat + Nr -->
-<div class="row g-3 mb-4 align-items-end">
-  <div class="col-md-6">
-    <label for="straat">Adres <span class="required">(Verplicht)</span></label>
-    <input type="text" id="straat" name="straat" placeholder="Straat" required />
+ <!-- Street + Number -->
+<div class="row g-3 mb-3 align-items-end">
+  <div class="col-12 col-md-8">
+    <label for="straat">Address <span class="required">(Required)</span></label>
+    <input type="text" id="straat" name="straat" placeholder="Street" required />
   </div>
-  <div class="col-2 col-md-2 number-input">
-    <label for="nummer" class="visually-hidden">Nr</label>
-    <input type="text" id="nummer" name="nummer" placeholder="Nr" />
+  <div class="col-5 col-md-2 number-input">
+    <label for="nummer" class="visually-hidden">No.</label>
+    <input type="text" id="nummer" name="nummer" placeholder="No." />
   </div> 
-    <div class="col-2 col-md-2 number-input">
-    <label for="nummer" class="visually-hidden">bus</label>
-    <input type="text" id="bus" name="bus" placeholder="bus" />
-  </div></div>
-
-<!-- Postcode + Gemeente -->
-<div class="row g-3 mb-4 align-items-end">
-  <div class="col-2 col-md-2">
-    <label for="postcode">Postcode <span class="required">(Verplicht)</span></label>
-    <input type="text" id="postcode" name="postcode" placeholder="Postcode" required />
-  </div>
-  <div class="col-6 col-md-6">
-    <label for="gemeente" class="visually-hidden">Gemeente</label>
-    <input type="text" id="gemeente" name="gemeente" placeholder="Gemeente" required />
+  <div class="col-5 col-md-2 number-input">
+    <label for="bus" class="visually-hidden">Box</label>
+    <input type="text" id="bus" name="bus" placeholder="Box" />
   </div>
 </div>
 
-
-
+<!-- Postal Code + City -->
+<div class="row g-3 mb-4 align-items-end">
+  <div class="col-5 col-md-6">
+    <label for="postcode">Postal Code <span class="required">(Required)</span></label>
+    <input type="text" id="postcode" name="postcode" placeholder="Postal Code" required />
+  </div>
+  <div class="col-6 col-md-6">
+    <label for="gemeente" class="visually-hidden">City</label>
+    <input type="text" id="gemeente" name="gemeente" placeholder="City" required />
+  </div>
+</div>
 
         <div class="row g-3 mb-4">
           <div class="col-md-6">
-            <label for="email">E-mail <span class="required">(Verplicht)</span></label>
-            <input type="email" id="email" name="email" placeholder="E-mailadres" required />
+            <label for="email">Email <span class="required">(Required)</span></label>
+            <input type="email" id="email" name="email" placeholder="Email Address" required />
           </div>
           <div class="col-md-6">
-            <label for="telefoon">Telefoon</label>
-            <input type="tel" id="telefoon" name="telefoon" placeholder="Telefoon" />
+            <label for="telefoon">Phone</label>
+            <input type="tel" id="telefoon" name="telefoon" placeholder="Phone" />
           </div>
         </div>
-           
-           <div class="row g-3 mb-4">
+
+         <div class="row g-3 mb-4">
   <div class="col-12">
-    <label for="onderwerp">Onderwerp</label>
+    <label for="onderwerp">Subject</label>
     <select id="onderwerp" name="subject" class="form-select" required>
-      <option value="" disabled selected>Kies...</option>
+      <option value="" disabled selected>Choose...</option>
       <option>IT Support</option>
-      <option>Netwerk Setup</option>
-      <option>Prijs offerte</option>
+      <option>Network Setup</option>
+      <option>Quote Request</option>
       <option>Other</option>
     </select>
   </div>
 </div>
 
-
         <div class="mb-4">
-          <label for="bericht">Jouw bericht <span class="required">(Verplicht)</span></label>
-          <textarea id="bericht" name="bericht" rows="6" placeholder="Je bericht" required></textarea>
+          <label for="bericht">Your Message <span class="required">(Required)</span></label>
+          <textarea id="bericht" name="bericht" rows="6" placeholder="Your message" required></textarea>
         </div>
 
         <p class="recaptcha-info">
-          Deze website wordt beschermd door reCAPTCHA: het 
-          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">privacybeleid</a> 
-          en de 
-          <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">servicevoorwaarden</a> 
-          van Google zijn van toepassing.
+          This website is protected by reCAPTCHA: the 
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> 
+          and the 
+          <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> 
+          of Google apply.
         </p>
 
-        <button type="submit" class="submit-btn">Verzenden</button>
+        <button type="submit" class="submit-btn">Send</button>
         </div>
-        </form>
-      </main>
-    
-
-    <!-- Footer -->
-    <footer class="footer bg-primary text-white py-5 w-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <h6 class="text-uppercase fw-bold mb-3">Contact</h6>
-            <p>Smitswei 36, Twijzelerheide<br>9287 NE Friesland, Nederland</p>
-            <p>info@hicko-it.com</p>
-            <p>01 234 567</p>
-
-            <div class="mt-3">
-              <a href="#" class="text-white me-3"><i class="fab fa-facebook-messenger"></i></a>
-              <a href="#" class="text-white me-3"><i class="fab fa-twitter-square"></i></a>
-              <a href="#" class="text-white"><i class="fab fa-twitch"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-8 col-md-6">
-            <h6 class="text-uppercase fw-bold mb-3">Over Ons</h6>
-            <p>
-              Professional IT solutions for businesses and individuals. From network installations to software deployments,
-              we keep your technology running smoothly.
-            </p>
-            <p>
-              Our experienced team provides reliable, professional IT services that help your business thrive.
-            </p>
-          </div>
-        </div>
-
-        <div class="text-center mt-4 border-top border-light pt-3 small opacity-75">
-          This site is for educational purposes and is fictional.
-        </div>
-      </div>
-    </footer>
+      </form>
+    </main>
   </div>
 
-  <!-- Bootstrap 5 JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- FontAwesome CDN for social icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!-- Start Footer -->
+<footer class="footer">
+  <!-- Quote section -->
+  <div class="footer-quote" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+    <h2><span class="quote">Need IT support? We’re happy to help you!</span></h2>
+    <p><strong>We are happy to assist you just like our other clients</strong> throughout Flanders</p>
+  </div>
+
+  <!-- Main footer content -->
+  <div class="footer-container">
+      <div class="footer-section">
+      <h3>Infrastructure & Cloud</h3>
+      <ul>
+        <li><a href="../verkoop-van-it-hardware/index.html">Hardware Sales</a></li>
+        <li><a href="../netwerkbeheer-van-jouw-kmo/index.html">Networks</a></li>
+        <li><a href="../webhosting-voor-jouw-bedrijfswebsite/index.html">Domains and Hosting</a></li>
+        <li><a href="../overschakelen-naar-microsoft-365-met-jouw-bedrijf/index.html">Microsoft 365</a></li>
+        <li><a href="../samenwerken-met-microsoft-teams/index.html">Microsoft Teams</a></li>
+        <li><a href="../voip-telefonie/index.html">VOIP Telephony</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Security & Support</h3>
+      <ul>
+        <li><a href="../backup-van-jouw-kostbare-bedrijfsgegevens/index.html">Data Backup</a></li>
+        <li><a href="../cyberbeveiliging/index.html">Cybersecurity</a></li>
+        <li><a href="../it-ondersteuning-op-maat/index.html">IT Support</a></li>
+        <li><a href="../it-advies-op-maat/index.html">IT Consulting</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Info</h3>
+      <p>Phone: 0123 45 67 89</p>
+      <p>Email: <a href="mailto:info@kockel-it.be">info@hicko-it.be</a></p>
+      <p>Location: Dendermonde</p>
+      <div class="social-links mt-3">
+        <a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+  <div class="footer-bottom">
+    <p>© 2025 Hicko IT - All rights reserved</p>
+  </div>
+</footer>
+<!-- End Footer -->
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- Custom JS files -->
+<script src="js/navbar.js"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/AOS.js"></script>
+<script src="js/contact.js"></script>
       
-          </body>
+</body>
 </html>

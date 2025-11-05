@@ -1266,7 +1266,7 @@ input {
   width: 100vw;
   min-height: 1vh;           /* fill viewport */
   background-color: #1e4356;   /* neutral color */
-  padding: 180px 2rem;         /* optional internal spacing */
+  padding: 250px 2rem;         /* optional internal spacing */
   margin: 0;                    /* remove default margin */
   box-sizing: border-box;
   overflow: hidden;

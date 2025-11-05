@@ -1258,14 +1258,14 @@ input {
   color: #68A4C4;
 }
 
-/*test*/
+/*test #1e4356  */
 
 
 .hero-neutral {
   position: relative;
   width: 100vw;
   min-height: 1vh;           /* fill viewport */
-  background-color: #1e4356;   /* neutral color */
+  background-color: #0b47a1;   /* neutral color */
   padding: 250px 2rem;         /* optional internal spacing */
   margin: 0;                    /* remove default margin */
   box-sizing: border-box;
@@ -1297,6 +1297,49 @@ body, html {
 }
 
 
+
+
+
+
+.content-section {
+  background-color: #e9f5fc;
+  padding: 60px 0;
+}
+
+.content-section img {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.content-section .col-lg-6.text-center {
+  text-align: left;
+  padding: 40px 20px;
+}
+
+.content-section .section-title h2 {
+  font-size: 1.8rem;
+  color: #005fa3;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.content-section p {
+  color: #333;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 991px) {
+  .content-section .col-lg-6 {
+    text-align: center;
+    padding: 20px 15px;
+  }
+  .content-section img {
+    margin-bottom: 30px;
+  }
+}
 
 
 

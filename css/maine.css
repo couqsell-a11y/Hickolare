@@ -362,7 +362,6 @@ input {
   padding-right: 1rem;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
 #mainNavbar {
   background-color: transparent !important;
 }
@@ -409,6 +408,7 @@ input {
 #mainNavbar .nav-link i {
   color: #000 !important;
 }
+
 
 /* ==========================================================================
    #COMPONENTS: SEARCH
@@ -1275,7 +1275,7 @@ input {
 
 /* Only push the content inside the hero down */
 .hero-neutral .hero-content {
-  padding-top: 250px; /* adjust this for navbar height / spacing */
+  padding-top: 200px; /* adjust this for navbar height / spacing */
   padding-bottom: 150px; /* optional for symmetry */
 }
 

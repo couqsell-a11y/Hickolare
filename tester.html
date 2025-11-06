@@ -14,8 +14,29 @@
   <!-- Google Fonts for Poppins (matches your CSS) -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../css/maine.css">
-  </head>
+  <link rel="stylesheet" href="css/maine.css">
+  
+    
+    <style>.hero-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fadeText 180s infinite; /* 3 items × 60s each */
+}
+
+.hero-item:nth-child(1) { animation-delay: 0s; }
+.hero-item:nth-child(2) { animation-delay: 60s; }
+.hero-item:nth-child(3) { animation-delay: 120s; }
+
+@keyframes fadeText {
+  0%, 3%   { opacity: 0; }
+  5%, 95%  { opacity: 1; }
+  97%, 100%{ opacity: 0; }
+}
+</style>
+    
+    </head>
 
   
   <body>
@@ -319,8 +340,8 @@ Comprehensive IT solutions, tailored to all your technology needs  </p>
   <!-- Language selector -->  
  <div id="floating-lang"> 
 
-<button class="lang-btn" data-url="index.html" onclick="changeLanguage('index.html')">EN</button>
-<button class="lang-btn" data-url="../nl/index.html" onclick="changeLanguage('../nl/index.html')">NL</button>
+<button class="lang-btn" data-url="../en/index.html" onclick="changeLanguage('index.html')">EN</button>
+<button class="lang-btn" data-url="index.html" onclick="changeLanguage('../index.html')">NL</button>
    <button class="lang-btn" data-url="#top" onclick="changeLanguage('#top')">↑</button>
     </div>
 

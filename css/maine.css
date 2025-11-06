@@ -523,7 +523,7 @@ input {
   100% { opacity: 0; transform: translateY(30px); }
 }
 
-@keyframes fadeScaleLoop {
+@keyframes eeScaleLoop {
   0% { opacity: 0; transform: scale(0.95); }
   3% { opacity: 1; transform: scale(1); }
   90% { opacity: 1; transform: scale(1); }

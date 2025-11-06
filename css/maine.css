@@ -368,7 +368,7 @@ input {
 }
 
 #mainNavbar.scrolled {
-  background-color: rgba(255, 255, 255, 0.9) !important;
+  background-color: rgba(11, 71, 161, 0.9) !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -1313,7 +1313,7 @@ body, html {
 
 .content-section .col-lg-6.text-center {
   text-align: left;
-  padding: 40px 20px;
+  padding: 5px 20px;
 }
 
 .content-section .section-title h2 {
@@ -1344,4 +1344,5 @@ body, html {
 
 
 /* end of test */
+
 

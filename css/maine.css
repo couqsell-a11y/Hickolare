@@ -1424,8 +1424,6 @@ input {
   color: #68a4c4;
 }
 
-/*test #1e4356  */
-
 .hero-neutral {
   position: relative;
   width: 100%;
@@ -1462,6 +1460,7 @@ input {
   align-items: center;
   height: 100%;
 }
+
 body,
 html {
   margin: 0;
@@ -1481,6 +1480,7 @@ html {
 .content-section .col-lg-6.text-center {
   text-align: left;
   padding: 5px 20px;
+  font-size: 38px !important;
 }
 
 .content-section .section-title h2 {
@@ -1653,4 +1653,99 @@ section:nth-of-type(even) {
 ul {
   list-style: none;
   padding-left: 0; /* optional, to remove extra indentation */
+}
+/* Services css 365 tiles*/
+.services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 40px 0;
+  background: #fff;
+  box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border: 1px solid #000;
+}
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #111111;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Packages Section */
+#microsoft365-pakketten {
+  padding: 80px 0;
+  background-color: #f9fafd;
+}
+
+#microsoft365-pakketten .section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e4356;
+}
+
+#microsoft365-pakketten .text-center p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.icon-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-box .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #0b3d5f;
+  text-decoration: underline;
+}
+
+.icon-box .description {
+  font-size: 0.95rem;
+  color: #444;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.package-features li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.package-features li::before {
+  content: "\2713"; /* checkmark */
+  position: absolute;
+  left: 0;
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;      /* adjust font size */
+  line-height: 1.6;     /* spacing between lines */
+  color: #333;          /* default text color */
+  margin-bottom: 1em;   /* spacing after paragraphs */
 }

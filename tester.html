@@ -15,25 +15,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/maine.css">
+  <link rel="stylesheet" href="css/tester.css">
   
     
-    <style>.hero-item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  animation: fadeText 180s infinite; /* 3 items × 60s each */
-}
-
-.hero-item:nth-child(1) { animation-delay: 0s; }
-.hero-item:nth-child(2) { animation-delay: 60s; }
-.hero-item:nth-child(3) { animation-delay: 120s; }
-
-@keyframes fadeText {
-  0%, 3%   { opacity: 0; }
-  5%, 95%  { opacity: 1; }
-  97%, 100%{ opacity: 0; }
-}
+    <style>
 </style>
     
     </head>
@@ -58,43 +43,50 @@
     <ul class="navbar-nav text-center ms-auto">
 
            <!-- DROPDOWN MENU  -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dienstenDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Services
-        </a>
-        <ul class="dropdown-menu dropdown-menu-end p-3 shadow-lg border-0 rounded-3" aria-labelledby="dienstenDropdown" style="min-width: 250px;">
-          <li>
-            <div class="fw-bold text-primary mb-2">Infrastructure</div>
-            <a class="dropdown-item" href="verkoop-van-it-hardware/index.html">Hardware</a>
-            <a class="dropdown-item" href="netwerkbeheer-van-jouw-kmo/index.html">Network</a>
-            <a class="dropdown-item" href="webhosting-voor-jouw-bedrijfswebsite/index.html">Domain and hosting</a>
-          </li>
-          <li><hr class="dropdown-divider"></li>
-          <li>
-            <div class="fw-bold text-primary mb-2">Cloud</div>
-            <a class="dropdown-item" href="overschakelen-naar-microsoft-365-met-jouw-bedrijf/index.html">Microsoft 365</a>
-            <a class="dropdown-item" href="samenwerken-met-microsoft-teams/index.html">Microsoft Teams</a>
-            <a class="dropdown-item" href="voip-telefonie/index.html">VOIP Phone system</a>
-          </li>
-          <li><hr class="dropdown-divider"></li>
-          <li>
-            <div class="fw-bold text-primary mb-2">Security</div>
-            <a class="dropdown-item" href="backup-van-jouw-kostbare-bedrijfsgegevens/index.html">Data backup</a>
-            <a class="dropdown-item" href="cyberbeveiliging/index.html">Cybersecurity</a>
-          </li>
-          <li><hr class="dropdown-divider"></li>
-          <li>
-            <div class="fw-bold text-primary mb-2">Support</div>
-            <a class="dropdown-item" href="it-ondersteuning-op-maat/index.html">IT Support</a>
-            <a class="dropdown-item" href="it-advies-op-maat/index.html">IT Consultancy</a>
-          </li>
-        </ul>
-      </li>
+     <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="dienstenDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Diensten
+  </a>
+
+  <div class="dropdown-menu mega-dropdown p-4 shadow-lg border-0 rounded-3" aria-labelledby="dienstenDropdown">
+    <div class="row gx-5">
+      <div class="col-md-3">
+        <h6 class="fw-bold text-primary mb-2">Infrastructuur</h6>
+        <a class="dropdown-item" href="verkoop.html">Verkoop van hardware</a>
+        <a class="dropdown-item" href="netwerken.html">Netwerken</a>
+        <a class="dropdown-item" href="websites.html">Domeinen en hosting</a>
+      </div>
+
+      <div class="col-md-3">
+        <h6 class="fw-bold text-primary mb-2">Cloud</h6>
+        <a class="dropdown-item" href="overschakelen-naar-microsoft-365-met-jouw-bedrijf/index.html">Microsoft 365</a>
+        <a class="dropdown-item" href="samenwerken-met-microsoft-teams/index.html">Microsoft Teams</a>
+        <a class="dropdown-item" href="voip-telefonie/index.html">VOIP Telefonie</a>
+      </div>
+
+      <div class="col-md-3">
+        <h6 class="fw-bold text-primary mb-2">Beveiliging</h6>
+        <a class="dropdown-item" href="backup-van-jouw-kostbare-bedrijfsgegevens/index.html">Backup van gegevens</a>
+        <a class="dropdown-item" href="cyberbeveiliging/index.html">Cyberbeveiliging</a>
+      </div>
+
+      <div class="col-md-3">
+        <h6 class="fw-bold text-primary mb-2">Ondersteuning</h6>
+        <a class="dropdown-item" href="it-ondersteuning-op-maat/index.html">IT Ondersteuning</a>
+        <a class="dropdown-item" href="it-advies-op-maat/index.html">IT Advies</a>
+      </div>
+    </div>
+  </div>
+</li>
+
 
       <li class="nav-item"><a class="nav-link" href="Projects.html">Over ons</a></li>
       <li class="nav-item"><a class="nav-link" href="Pricing.html">Partners</a></li>
       <li class="nav-item"><a class="nav-link" href="Products.html">Referenties</a></li>
       <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      <li class="nav-item ms-lg-3">
+  <a href="contact.html" class="btn btn-yellow-navbar">Support</a>
+</li>
     </ul>
   </div>
 </nav>
@@ -252,6 +244,29 @@ Comprehensive IT solutions, tailored to all your technology needs  </p>
   </div>
 </div>
 
+    <!-- Waarom Hicko -->
+<section class="why-us section-bg" data-aos="fade-up" date-aos-delay="400">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+        <div class="icon-box">
+          <h4 class="title">Waarom kiezen voor Hicko IT?</h4>
+          <p class="description">
+            Hicko IT biedt een volledige en persoonlijke aanpak voor al je IT-behoeften.  
+            Van installatie en onderhoud tot beveiliging en cloudbeheer – alles wordt afgestemd op jouw situatie.  
+            Ons ervaren team combineert technische kennis met een menselijke aanpak.  
+            Zo krijg jij een duurzame en betaalbare IT-oplossing waar je écht op kunt rekenen.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+        <img src="../pics/chooseme.jpg" class="img-fluid" alt="Over Ons">
+      </div>
+    </div>
+  </div>
+</section>
+    
+    
 <!-- Right column -->
 <div class="why-right">
   <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">

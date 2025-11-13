@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
-
-    <title>Hicko-IT - HomePagina</title>
+    <meta
+      name="description"
+      content="Hicko IT ondersteunt individuen en MKB's met slimme, betrouwbare en gebruiksvriendelijke IT-oplossingen. Ontdek onze missie, waarden en passie voor langdurige technologiepartnerschappen." />
+    <title>Hicko-IT - Over ons</title>
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -19,14 +21,14 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/maine.css" />
   </head>
-
+  <!-- Start of Body -->
   <body>
-    <!-- Navbar -->
+    <!-- Navigation bar start -->
     <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top px-4">
       <a class="navbar-brand" href="index.html" style="cursor: pointer">
         <img src="../pics/Logo.png" alt="Logo" width="150" height="50" />
       </a>
-
+      <!-- Right navbar toggler (menu button) -->
       <button
         class="navbar-toggler"
         type="button"
@@ -37,11 +39,12 @@
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+      <!-- Collapsible menu -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
         <ul class="navbar-nav text-center ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <!-- DROPDOWN MENU  -->
-       <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -64,39 +67,37 @@
               <li><hr class="dropdown-divider" /></li>
               <li>
                 <div class="fw-bold text-primary mb-2">Cloud</div>
-                <a class="dropdown-item" href="Microsoft365.html"
-                  >Microsoft 365</a
-                >
+                <a class="dropdown-item" href="Microsoft365.html">Microsoft 365</a>
                 <a class="dropdown-item" href="Microsoft-automation.html">Microsoft Automation</a>
                 <a class="dropdown-item" href="Telefonie.html">VOIP Telefonie</a>
               </li>
               <li><hr class="dropdown-divider" /></li>
               <li>
                 <div class="fw-bold text-primary mb-2">Beveiliging</div>
-                <a class="dropdown-item" href="Back-ups.html"
-                  >Backup van gegevens</a
-                >
+                <a class="dropdown-item" href="Back-ups.html">Backup van gegevens</a>
                 <a class="dropdown-item" href="Cyberbeveiliging.html">Cyberbeveiliging</a>
               </li>
               <li><hr class="dropdown-divider" /></li>
               <li>
                 <div class="fw-bold text-primary mb-2">Ondersteuning</div>
+                <a class="dropdown-item" href="Herstellingen.html">IT Herstellingen</a>
                 <a class="dropdown-item" href="IT-Support.html">IT Ondersteuning</a>
                 <a class="dropdown-item" href="it-advies.html">IT Advies</a>
               </li>
             </ul>
           </li>
-
+          <!-- einde dropdown -->
           <li class="nav-item"><a class="nav-link" href="Pricing.html">Prijzen</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <!-- Support button -->
           <li class="nav-item ms-lg-3">
             <a href="contact.html" class="btn btn-yellow-navbar">Support</a>
           </li>
         </ul>
       </div>
     </nav>
-
-    <!-- Hero Sectie -->
+    <!-- Start of main body -->
+    <!-- Hero Intro Section -->
     <section class="hero-neutral">
       <div class="container hero-content">
         <div class="row align-items-center">
@@ -116,8 +117,7 @@
         </div>
       </div>
     </section>
-
-    <!-- Missie & Kernwaarden -->
+    <!-- Missie & Kernwaarden Section -->
     <section class="content-section bg-lightblue" data-aos="fade-up" date-aos-delay="600">
       <div class="container">
         <div class="row">
@@ -133,7 +133,6 @@
               vaste IT-partner zijn – een partner die meedenkt, ontzorgt en vooruitkijkt. Met slimme oplossingen helpen
               we jouw bedrijf groeien in een veilige en stabiele digitale omgeving.
             </p>
-
             <div class="section-title">
               <h2>Kernwaarden</h2>
             </div>
@@ -148,37 +147,39 @@
         </div>
       </div>
     </section>
+    <!-- Back to top button -->
     <div id="floating-lang"><button class="lang-btn" data-url="#top" onclick="changeLanguage('#top')">↑</button></div>
-    <!-- Footer -->
+    <!-- Start Footer -->
     <footer class="footer">
+      <!-- Footer quote Section -->
       <div class="footer-quote" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-        <h2><span class="quote">IT-ondersteuning nodig? Hicko helpt je verder!</span></h2>
-        <p><strong>We staan klaar voor klanten in heel Vlaanderen</strong> – snel, persoonlijk en professioneel.</p>
+        <h2><span class="quote">IT-ondersteuning nodig?</span></h2>
+        <p><strong>We staan voor je klaar</strong> – snel, persoonlijk en professioneel.</p>
       </div>
-
+      <!-- Main footer content -->
       <div class="footer-container">
         <div class="footer-section">
           <h3>Infrastructuur & Cloud</h3>
           <ul>
-            <li><a href="../verkoop-van-it-hardware/index.html">Verkoop van hardware</a></li>
-            <li><a href="../netwerkbeheer-van-jouw-kmo/index.html">Netwerken</a></li>
-            <li><a href="../webhosting-voor-jouw-bedrijfswebsite/index.html">Domeinen en hosting</a></li>
-            <li><a href="../overschakelen-naar-microsoft-365-met-jouw-bedrijf/index.html">Microsoft 365</a></li>
-            <li><a href="../samenwerken-met-microsoft-teams/index.html">Microsoft Teams</a></li>
-            <li><a href="../voip-telefonie/index.html">VOIP Telefonie</a></li>
+            <li><a href="Verkoop.html">Verkoop van hardware</a></li>
+            <li><a href="Netwerken.html">Netwerken</a></li>
+            <li><a href="Websites.html">Domeinen en hosting</a></li>
+            <li><a href="Microsoft365.html">Microsoft 365</a></li>
+            <li><a href="Microsoft-automation.html">Microsoft Automatisatie</a></li>
+            <li><a href="Telefonie.html">VOIP Telefonie</a></li>
           </ul>
         </div>
-
         <div class="footer-section">
           <h3>Beveiliging & Ondersteuning</h3>
           <ul>
-            <li><a href="../backup-van-jouw-kostbare-bedrijfsgegevens/index.html">Backup van gegevens</a></li>
-            <li><a href="../cyberbeveiliging/index.html">Cyberbeveiliging</a></li>
-            <li><a href="../it-ondersteuning-op-maat/index.html">IT Ondersteuning</a></li>
-            <li><a href="../it-advies-op-maat/index.html">IT Advies</a></li>
+            <li><a href="Back-ups.html">Backup van gegevens</a></li>
+            <li><a href="Cyberbeveiliging.html">Cyberbeveiliging</a></li>
+            <li><a href="Herstellingen.html">IT Herstellingen</a></li>
+            <li><a href="IT-Support.html">IT Ondersteuning</a></li>
+            <li><a href="IT-Advies.html">IT Advies</a></li>
           </ul>
         </div>
-
+        <!-- Contact info footer -->
         <div class="footer-section">
           <h3>Contact</h3>
           <p>Telefoon: 0123 45 67 89</p>
@@ -190,13 +191,13 @@
           </div>
         </div>
       </div>
-
       <hr />
+      <!-- Copyright  -->
       <div class="footer-bottom">
         <p>© 2025 Hicko IT - Alle rechten voorbehouden</p>
       </div>
+      <hr />
     </footer>
-
     <!-- Scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

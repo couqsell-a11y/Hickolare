@@ -1,241 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Pricing and Subscriptions | Hicko-IT</title>
 
-<head>
+<meta name="description" content="Explore Hicko-IT's flexible pricing and subscription options for reliable IT services. Choose the plan that fits your business or personal needs and get the support you deserve.">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="IT products and hardware including computers, software licenses, networking equipment, and accessories.">
-  <meta name="keywords" content="IT products, hardware, software, computers, networking equipment">
-  <title>Hicko-IT - Products</title>
+<meta name="keywords" content="IT services, pricing, subscriptions, IT support, flexible plans, IT solutions, pricing options, business IT, personal IT, local IT services">
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="css/maine.css">
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-      <img src="/pics/Logo.PNG" alt="Logo" width="150px" height="50px"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+<meta name="author" content="Hicko-IT">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <!-- Animate on Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Google Fonts for Poppins (matches your CSS) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/maine.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+  <body>
+    <!-- Navigation bar start -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top px-4">
+      <a class="navbar-brand" href="index.html" style="cursor: pointer">
+        <img src="../pics/Logo.png" alt="Logo" width="150" height="50" />
+      </a>
+      <!-- Right navbar toggler (menu button) -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Collapsible menu -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto text-center w-100">
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Pricing.html">Pricing</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="Products.html">Products
-              <span class="sr-only">(current)</span>
+        <ul class="navbar-nav text-center ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <!-- DROPDOWN MENU  -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dienstenDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
             </a>
-          </li><li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <ul
+              class="dropdown-menu dropdown-menu-end p-3 shadow-lg border-0 rounded-3"
+              aria-labelledby="dienstenDropdown"
+              style="min-width: 250px">
+              <li>
+                <div class="fw-bold text-primary mb-2">Infrastructure</div>
+                <a class="dropdown-item" href="Verkoop.html">Hardware Sales</a>
+                <a class="dropdown-item" href="Netwerken.html">Networking</a>
+                <a class="dropdown-item" href="Websites.html">Domains & Hosting</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <div class="fw-bold text-primary mb-2">Cloud</div>
+                <a class="dropdown-item" href="Microsoft365.html">Microsoft 365</a>
+                <a class="dropdown-item" href="Microsoft-automation.html">Microsoft Automation</a>
+                <a class="dropdown-item" href="Telefonie.html">VOIP Telephony</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <div class="fw-bold text-primary mb-2">Security</div>
+                <a class="dropdown-item" href="Back-ups.html">Data Backup</a>
+                <a class="dropdown-item" href="Cyberbeveiliging.html">Cybersecurity</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <div class="fw-bold text-primary mb-2">Support</div>
+                <a class="dropdown-item" href="Herstellingen.html">IT Repairs</a>
+                <a class="dropdown-item" href="IT-Support.html">IT Support</a>
+                <a class="dropdown-item" href="IT-Advies.html">IT Consulting</a>
+              </li>
+            </ul>
+          </li>
+          <!-- End of dropdown menu -->
+          <li class="nav-item"><a class="nav-link" href="Over-ons.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="Prijzen.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+          <!-- Support button -->
+          <li class="nav-item ms-lg-3">
+            <a href="contact.html" class="btn btn-yellow-navbar">Support</a>
           </li>
         </ul>
       </div>
+    </nav>
+    <!-- End of Navbar -->
+    <!-- Hero Section --><main id="main">
+  <section class="hero-neutral">
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <p class="text-warning fw-bold small">Fast IT support for your business</p>
+          <h1 class="display-6 fw-bold">Reliable IT support for your business</h1>
+          <p class="lead">
+            IT issues usually appear at the worst possible moment.  
+            At <strong>Hicko IT</strong>, we understand this and are ready to assist you immediately.  
+            With our <b>remote assistance</b>, we quickly resolve malfunctions, error messages, and connectivity problems,  
+            so you can continue working without losing time.
+          </p>
+          <div class="cta-wrapper">
+            <a href="IT-Support.html" class="cta-button">Request IT support now!</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </nav>
-    <!-- einde navigatie-->
+  </section>
+  <!-- ======= End Intro Section ======= -->
 
-  <!-- Page Content -->
-  <div class="container">
-
-    <div class="row">
-
-      <!-- Post Content Column -->
-      <div class="col-lg-8">
-
-        <!-- Title -->
-        <h1 class="mt-4">IT Products & Hardware</h1>
-
-        <!-- Author -->
-        <p class="lead">
-          by
-          <a href="index.html">Hicko-IT</a>
-        </p>
-
-        <hr>
-
-        <!-- Preview Image -->
-        <img class="img-fluid rounded" src="pics/network-icon.png" alt="IT Products">
-
-        <hr>
-
-        <!-- Post Content -->
-        <!-- Content Row -->
-    <div class="row">
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title">Network Equipment</h2>
-            <p class="card-text">High-performance routers, switches, and networking hardware for reliable connectivity. From small office setups to enterprise-grade solutions.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <!-- /.col-md-4 -->
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title">Computers & Laptops</h2>
-            <p class="card-text">Business-grade workstations and laptops optimized for productivity. Custom configurations available for specific business needs.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <!-- /.col-md-4 -->
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title">Software Solutions</h2>
-            <p class="card-text">Business software, productivity tools, and custom applications. Including antivirus, backup solutions, and collaboration platforms.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <!-- /.col-md-4 -->
-
-    </div>
-    <!-- /.row -->
-
-        
-      </div>
-
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
-
-        <!-- Search Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Product Search</h5>
-          <div class="card-body">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search products...">
-              <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">Search</button>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Categories Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Categories</h5>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">Hardware</a>
-                  </li>
-                  <li>
-                    <a href="#">Software</a>
-                  </li>
-                  <li>
-                    <a href="#">Networking</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">Security</a>
-                  </li>
-                  <li>
-                    <a href="#">Cloud Services</a>
-                  </li>
-                  <li>
-                    <a href="#">Support</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Side Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Why Choose Our Products?</h5>
-          <div class="card-body">
-            We offer high-quality IT products and hardware that are reliable, scalable, and backed by our expert support team. Whether you're setting up a new office or upgrading your existing infrastructure, we have the solutions to keep your business running smoothly and securely.
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark text-white">
+  <!-- Repair Section -->
+  <section id="Herstelling" class="checklist" data-aos="fade-up">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <h6 class="text-uppercase fw-bold mb-3">Contact</h6>
-          <p class="mb-1">
-            <i class="fas fa-map-marker-alt me-2"></i>
-            Smitswei 36, Twijzelerheide<br>
-            9287 NE Friesland, Nederland</p>
-          <p class="mb-1">
-            <i class="fa fa-envelope me-2"></i>
-            info@hicko-it.com
-          </p>
-          <p class="mb-1">
-            <i class="fa fa-fax me-2"></i>
-            01 234 567
-          </p>
-
-          <div class="mt-3">
-            <a href="#" class="text-white me-3"><i class="fab fa-facebook-messenger"></i></a>
-            <a href="#" class="text-white me-3"><i class="fab fa-twitter-square"></i></a>
-            <a href="#" class="text-white"><i class="fab fa-twitch"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-8 col-md-6">
-          <h6 class="text-uppercase fw-bold mb-3">About Hicko-IT</h6>
-          <p>
-            Professional IT solutions for businesses and individuals. From network installations to software deployments,
-            we keep your technology running smoothly.
-          </p>
-          <p>
-            Our experienced team provides reliable, professional IT services that help your business thrive.
-          </p>
-        </div>
+      <div class="section-title">
+        <h2>Hardware Repair and Replacement</h2>
+        <p>Is your computer, laptop, or server no longer performing as it should?  
+           We provide fast <b>diagnosis and repair</b> of your hardware issues.  
+           From defective hard drives to slow network switches or broken laptops — we repair or replace components with high-quality, reliable parts.</p>
       </div>
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+          <ul>
+            <li class="d-flex align-items-start mb-3">
+              <i class="bi bi-check2-circle me-3 text-success" style="font-size: 1.5rem"></i>
+              <div>
+                <h3 class="mb-1">Data Recovery</h3>
+                <p>Hardware failures or disk problems</p>
+              </div>
+            </li>
 
-      <div class="text-center mt-4 border-top pt-3 small text-muted">
-        This site is for educational purposes and is fictional.
+            <li class="d-flex align-items-start mb-3">
+              <i class="bi bi-check2-circle me-3 text-success" style="font-size: 1.5rem"></i>
+              <div>
+                <h3 class="mb-1">Replacement of Defective Components</h3>
+                <p>Desktop, Laptop, Server, Peripherals, etc.</p>
+              </div>
+            </li>
+
+            <li class="d-flex align-items-start mb-3">
+              <i class="bi bi-check2-circle me-3 text-success" style="font-size: 1.5rem"></i>
+              <div>
+                <h3 class="mb-1">Repair of Defective Components</h3>
+                <p>Desktop, Laptop, Server, Peripherals, etc.</p>
+              </div>
+            </li>
+
+            <li class="d-flex align-items-start mb-3">
+              <i class="bi bi-check2-circle me-3 text-success" style="font-size: 1.5rem"></i>
+              <div>
+                <h3 class="mb-1">Installation and Configuration</h3>
+                <p><a href="Microsoft-automation.html">Automated</a> or manual</p>
+              </div>
+            </li>
+
+            <li class="d-flex align-items-start mb-3">
+              <i class="bi bi-check2-circle me-3 text-success" style="font-size: 1.5rem"></i>
+              <div>
+                <h3 class="mb-1">Secure Email Communication</h3>
+                <p>Properly configured domains prevent emails from ending up in spam.</p>
+              </div>
+            </li>
+          </ul>
+          <p>Thanks to our direct collaboration with suppliers, we can <b>deliver parts quickly</b>  
+             and get your systems operational again with minimal downtime.  
+             This way, your team remains productive without having to wait weeks for technical solutions.</p>
+        </div>
+        <div class="col-lg-6 video-box">
+          <img src="../pics/maintenance.jpg" alt="Advantages of owning your domain" class="img-fluid" />
+        </div>
       </div>
     </div>
-  </footer>
-    <!-- einde voet-->
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="/vendor/jquery/jquery.min.js"></script>
-  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+  </section>
+</main>
+    <!-- Contact Section -->
+    <div class="col-md-12">
+      <div id="contact" class="page-wrapper">
+        <section class="form-wrapper">
+          <form action="#" method="post" novalidate>
+            <div class="section-title" id="contactus">
+              <h2><br /><br />Get in Touch</h2>
+            </div>
+            <div class="mb-4">
+              <label for="bedrijf">Company Name</label>
+              <input type="text" id="bedrijf" name="bedrijf" placeholder="Company Name" />
+            </div>
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label for="voornaam">First Name <span class="required">(Required)</span></label>
+                <input type="text" id="voornaam" name="voornaam" placeholder="First Name" required />
+              </div>
+              <div class="col-md-6">
+                <label for="familienaam">Last Name <span class="required">(Required)</span></label>
+                <input type="text" id="familienaam" name="familienaam" placeholder="Last Name" required />
+              </div>
+            </div>
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label for="email">Email <span class="required">(Required)</span></label>
+                <input type="email" id="email" name="email" placeholder="Email Address" required />
+              </div>
+              <div class="col-md-6">
+                <label for="telefoon">Phone</label>
+                <input type="tel" id="telefoon" name="telefoon" placeholder="Phone" pattern="[0-9]{10}" />
+              </div>
+            </div>
+            <div class="row g-3 mb-4">
+              <div class="col-12">
+                <label for="onderwerp">Subject</label>
+                <select id="onderwerp" name="subject" class="form-select" disabled>
+                  <option selected>Subscriptions</option></select
+                ><input type="hidden" name="subject" value="Subscriptions" />
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="bericht">Your Message <span class="required">(Required)</span></label>
+              <textarea id="bericht" name="bericht" rows="6" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send</button>
+          </form>
+        </section>
+      </div>
+      <div id="floating-lang">
+        <button class="lang-btn" data-url="#top" onclick="changeLanguage('#top')">↑</button>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-quote" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+        <h2><span class="quote">Reliable IT Support Needed?</span></h2>
+        <p><strong>Partner with Hicko IT — your trusted IT partner for business growth and continuity.</strong></p>
+      </div>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Infrastructure & Cloud</h3>
+          <ul>
+            <li><a href="Verkoop.html">Hardware Sales</a></li>
+            <li><a href="Netwerken.html">Networking</a></li>
+            <li><a href="Websites.html">Domains & Hosting</a></li>
+            <li><a href="Microsoft365.html">Microsoft 365</a></li>
+            <li><a href="Microsoft-automation.html">Microsoft Automation</a></li>
+            <li><a href="Telefonie.html">VOIP Telephony</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Security & Support</h3>
+          <ul>
+            <li><a href="Back-ups.html">Data Backup</a></li>
+            <li><a href="Cyberbeveiliging.html">Cybersecurity</a></li>
+            <li><a href="Herstellingen.html">IT Repairs</a></li>
+            <li><a href="IT-Support.html">IT Support</a></li>
+            <li><a href="IT-Advies.html">IT Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p>Phone: 0123 45 67 89</p>
+          <p>Email: <a href="mailto:info@Hicko-it.be">info@hicko-it.be</a></p>
+          <p>Location: Dendermonde</p>
+          <p>VAT BE 0101010101010101</p>
+          <div class="social-links mt-3">
+            <a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <p>© 2025 Hicko IT - All rights reserved</p>
+      </div>
+      <hr />
+    </footer>
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script src="../js/mobile-search.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/Contact.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../js/AOS.js"></script>
+  </body>
 </html>

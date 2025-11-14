@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
 
     <title>Hicko-IT - HomePagina</title>
-       <!-- Bootstrap -->
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -174,11 +174,9 @@
                 <b>Toe aan nieuw IT-materiaal?</b> Wij analyseren jouw noden en helpen je de juiste keuze maken — van
                 laptop tot desktop of tablet. Daarbij houden we rekening met thuiswerk, mobiliteit en prestaties zodat
                 jouw team efficiënt kan werken.<br /><br />
-                We installeren ook een <a href="Cyberbeveiliging.html">betrouwbare antivirus</a> en helpen bij
-                het
-                <a href="Netwerken.html"
-                  >opzetten van een veilige verbinding met je bedrijfsnetwerk</a
-                >. Kortom: alles wat je nodig hebt voor een veilige en productieve werkplek.
+                We installeren ook een <a href="Cyberbeveiliging.html">betrouwbare antivirus</a> en helpen bij het
+                <a href="Netwerken.html">opzetten van een veilige verbinding met je bedrijfsnetwerk</a>. Kortom: alles
+                wat je nodig hebt voor een veilige en productieve werkplek.
               </p>
               <div class="text-center">
                 <a href="#contact" class="btn btn-lg btn-theme">Vraag vrijblijvend een offerte aan</a>
@@ -257,7 +255,7 @@
           </div>
         </div>
       </section>
-
+      <!--
       <section class="specialist">
         <div class="container">
           <div class="diensten-contacteer bg-lightblue">
@@ -284,7 +282,7 @@
             </div>
           </div>
           <!-- End blog author bio -->
-        </div>
+      <!--  </div>
       </section>
 
       <section id="merken" class="nopaddingtop section-bg">
@@ -323,101 +321,106 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
     </main>
- <!-- Begin Contact Section -->
-      <div class="col-md-12">
-        <div id="contact" class="page-wrapper">
-          <!-- Contact Form -->
-          <section class="form-wrapper">
-            <form action="#" method="post" novalidate>
-              <!-- Contact header -->
-              <div class="section-title" id="contactus">
-                <h2><br /><br />Neem contact op met ons</h2>
+    <!-- Begin Contact Section -->
+    <div class="col-md-12">
+      <div id="contact" class="page-wrapper">
+        <!-- Contact Form -->
+        <section class="form-wrapper">
+          <form action="#" method="post" novalidate>
+            <!-- Contact header -->
+            <div class="section-title" id="contactus">
+              <h2><br /><br />Neem contact op met ons</h2>
+            </div>
+            <!-- Bedrijfsnaam -->
+            <div class="mb-4">
+              <label for="bedrijf">Bedrijfsnaam</label>
+              <input type="text" id="bedrijf" name="bedrijf" placeholder="Bedrijfsnaam" />
+            </div>
+            <!-- Voornaam + naam -->
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label for="voornaam">Voornaam <span class="required">(Verplicht)</span></label>
+                <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" required />
               </div>
-              <!-- Bedrijfsnaam -->
-              <div class="mb-4">
-                <label for="bedrijf">Bedrijfsnaam</label>
-                <input type="text" id="bedrijf" name="bedrijf" placeholder="Bedrijfsnaam" />
+              <div class="col-md-6">
+                <label for="familienaam">Familienaam <span class="required">(Verplicht)</span></label>
+                <input type="text" id="familienaam" name="familienaam" placeholder="Familienaam" required />
               </div>
-              <!-- Voornaam + naam -->
-              <div class="row g-3 mb-4">
-                <div class="col-md-6">
-                  <label for="voornaam">Voornaam <span class="required">(Verplicht)</span></label>
-                  <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" required />
-                </div>
-                <div class="col-md-6">
-                  <label for="familienaam">Familienaam <span class="required">(Verplicht)</span></label>
-                  <input type="text" id="familienaam" name="familienaam" placeholder="Familienaam" required />
-                </div>
+            </div>
+            <!-- Straat + Nr -->
+            <div class="row g-3 mb-3 align-items-end">
+              <div class="col-12 col-md-8">
+                <label for="straat">Adres <span class="required">(Verplicht)</span></label>
+                <input type="text" id="straat" name="straat" placeholder="Straat" required />
               </div>
-              <!-- Straat + Nr -->
-              <div class="row g-3 mb-3 align-items-end">
-                <div class="col-12 col-md-8">
-                  <label for="straat">Adres <span class="required">(Verplicht)</span></label>
-                  <input type="text" id="straat" name="straat" placeholder="Straat" required />
-                </div>
-                <div class="col-5 col-md-2 number-input">
-                  <label for="nummer" class="visually-hidden">Nr</label>
-                  <input type="text" id="nummer" name="nummer" placeholder="Nr" />
-                </div>
-                <div class="col-5 col-md-2 number-input">
-                  <label for="nummer" class="visually-hidden">bus</label>
-                  <input type="text" id="bus" name="bus" placeholder="bus" />
-                </div>
+              <div class="col-5 col-md-2 number-input">
+                <label for="nummer" class="visually-hidden">Nr</label>
+                <input type="text" id="nummer" name="nummer" placeholder="Nr" />
               </div>
-              <!-- Postcode + Gemeente -->
-              <div class="row g-3 mb-4 align-items-end">
-                <div class="col-5 col-md-6">
-                  <label for="postcode">Postcode <span class="required">(Verplicht)</span></label>
-                  <input type="text" id="postcode" name="postcode" placeholder="Postcode" required />
-                </div>
-                <div class="col-6 col-md-6">
-                  <label for="gemeente" class="visually-hidden">Gemeente</label>
-                  <input type="text" id="gemeente" name="gemeente" placeholder="Gemeente" required />
-                </div>
+              <div class="col-5 col-md-2 number-input">
+                <label for="nummer" class="visually-hidden">bus</label>
+                <input type="text" id="bus" name="bus" placeholder="bus" />
               </div>
-              <!-- Mail + Telefoon -->
-              <div class="row g-3 mb-4">
-                <div class="col-md-6">
-                  <label for="email">E-mail <span class="required">(Verplicht)</span></label>
-                  <input type="email" id="email" name="email" placeholder="E-mailadres" required />
-                </div>
-                <div class="col-md-6">
-                  <label for="telefoon">Telefoon</label>
-                  <input type="tel" id="telefoon" name="telefoon" placeholder="Telefoon" pattern="[0-9]{10}" />
-                </div>
+            </div>
+            <!-- Postcode + Gemeente -->
+            <div class="row g-3 mb-4 align-items-end">
+              <div class="col-5 col-md-6">
+                <label for="postcode">Postcode <span class="required">(Verplicht)</span></label>
+                <input type="text" id="postcode" name="postcode" placeholder="Postcode" required />
               </div>
-              <!-- Dropdown selecter -->
-              <div class="row g-3 mb-4">
-                <div class="col-12">
-                  <label for="onderwerp">Onderwerp</label>
-                  <select id="onderwerp" name="subject" class="form-select" disabled>
-                    <option selected>Abonnementen</option>
-                  </select><input type="hidden" name="subject" value="Abonnementen">
-                </div>
+              <div class="col-6 col-md-6">
+                <label for="gemeente" class="visually-hidden">Gemeente</label>
+                <input type="text" id="gemeente" name="gemeente" placeholder="Gemeente" required />
               </div>
-              <!-- Bericht-->
-              <div class="mb-4">
-                <label for="bericht">Jouw bericht <span class="required">(Verplicht)</span></label>
-                <textarea id="bericht" name="bericht" rows="6" placeholder="Je bericht" required></textarea>
+            </div>
+            <!-- Mail + Telefoon -->
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label for="email">E-mail <span class="required">(Verplicht)</span></label>
+                <input type="email" id="email" name="email" placeholder="E-mailadres" required />
               </div>
-              <!-- Verzendknop -->
-              <button type="submit" class="submit-btn">Verzenden</button>
-            </form>
-          </section>
-        </div>
-        <!-- Naar boven knop -->
-        <div id="floating-lang">
-          <button class="lang-btn" data-url="#top" onclick="changeLanguage('#top')">↑</button>
-        </div>
+              <div class="col-md-6">
+                <label for="telefoon">Telefoon</label>
+                <input type="tel" id="telefoon" name="telefoon" placeholder="Telefoon" pattern="[0-9]{10}" />
+              </div>
+            </div>
+            <!-- Dropdown selecter -->
+            <div class="row g-3 mb-4">
+              <div class="col-12">
+                <label for="onderwerp">Onderwerp</label>
+                <select id="onderwerp" name="subject" class="form-select" disabled>
+                  <option selected>Verkoop</option></select
+                ><input type="hidden" name="subject" value="Verkoop" />
+              </div>
+            </div>
+            <!-- Bericht-->
+            <div class="mb-4">
+              <label for="bericht">Jouw bericht <span class="required">(Verplicht)</span></label>
+              <textarea id="bericht" name="bericht" rows="6" placeholder="Je bericht" required></textarea>
+            </div>
+            <!-- Verzendknop -->
+            <button type="submit" class="submit-btn">Verzenden</button>
+          </form>
+        </section>
       </div>
+      <!-- Naar boven knop -->
+      <div id="floating-lang">
+        <button class="lang-btn" data-url="#top" onclick="changeLanguage('#top')">↑</button>
+      </div>
+    </div>
     <!-- Start Footer -->
     <footer class="footer">
       <!-- ======= Footer quote Section ======= -->
       <div class="footer-quote" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
         <h2><span class="quote">Betrouwbare IT-partner nodig?</span></h2>
-        <p><strong>Kies voor Hicko-IT – jouw betrouwbare partner voor IT-oplossingen die zorgen voor groei en continuïteit.</strong></p>
+        <p>
+          <strong
+            >Kies voor Hicko-IT – jouw betrouwbare partner voor IT-oplossingen die zorgen voor groei en
+            continuïteit.</strong
+          >
+        </p>
       </div>
       <!-- Main footer content -->
       <div class="footer-container">

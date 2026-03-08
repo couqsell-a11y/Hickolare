@@ -30,9 +30,9 @@ if (!savedLang) {
   const userLang = navigator.language || navigator.userLanguage; // e.g., "nl-NL" or "en-US"
   
   // Map to your site’s language URLs
-  let langURL = '/index.html'; // default English
-  if (userLang.startsWith('nl')) langURL = '/nl/Home.html';
-  if (userLang.startsWith('fr')) langURL = '/fr/index.html';
+ // let langURL = '/index.html'; // default English
+ // if (userLang.startsWith('nl')) langURL = '/nl/Home.html';
+  //if (userLang.startsWith('fr')) langURL = '/fr/index.html';
   
   // Save for future visits
   localStorage.setItem('preferredLang', langURL);

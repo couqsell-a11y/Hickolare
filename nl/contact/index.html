@@ -199,6 +199,29 @@
           </div>
           <!-- Taal -->
           <input type="hidden" name="lang" value="nl" />
+          
+     <!-- Test script -->
+    
+      <!-- Honeypot hidden field -->
+    <input type="text" name="website" style="display:none">
+
+    <!-- Timestamp for timing protection -->
+    <input type="hidden" name="form_start" value="<?php echo time(); ?>">
+
+    <!-- Google reCAPTCHA -->
+    <div class="g-recaptcha" data-sitekey="6Lf1IoYsAAAAAJTG90ibS2kCRkvB3DlE9EtXW71p"></ div>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+           
+          
+          
+          
+          
+          
+          
+          
+          
+          
           <!-- Verzendknop -->
             <button type="submit" class="submit-btn">Verzenden</button>
         </form>

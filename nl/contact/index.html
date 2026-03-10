@@ -94,113 +94,113 @@
         </ul>
       </div>
     </nav>
-<!-- hero-sectie -->
-      <section class="hero-neutral">
-        <div class="container hero-content">
-          <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-              <p class="text-warning fw-bold small">CONTACTGEGEVENS</p>
-              <h1 class="display-5 fw-bold">Neem contact op</h1>
-              <p class="lead">
-                Bent u op zoek naar een betrouwbare IT-partner om uw KMO te laten groeien? Wilt u uw volgende project
-                met ons bespreken, of heeft u een nieuwe computer nodig? Neem contact op met Hicko IT voor een eerste
-                vrijblijvend consult!
-              </p>
-              <a href="#contact" class="text-primary fw-semibold">Ga naar het formulier →</a>
-            </div>
-            <div class="col-lg-6 text-center">
-              <img src="/pics/contactus.jpg" alt="Contact us" class="img-fluid rounded-3 shadow-sm" />
-            </div>
+    <!-- hero-sectie -->
+    <section class="hero-neutral">
+      <div class="container hero-content">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <p class="text-warning fw-bold small">CONTACTGEGEVENS</p>
+            <h1 class="display-5 fw-bold">Neem contact op</h1>
+            <p class="lead">
+              Bent u op zoek naar een betrouwbare IT-partner om uw KMO te laten groeien? Wilt u uw volgende project met
+              ons bespreken, of heeft u een nieuwe computer nodig? Neem contact op met Hicko IT voor een eerste
+              vrijblijvend consult!
+            </p>
+            <a href="#contact" class="text-primary fw-semibold">Ga naar het formulier →</a>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img src="/pics/contactus.jpg" alt="Contact us" class="img-fluid rounded-3 shadow-sm" />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
     <!-- Contact section -->
-<div id="contact" class="page-wrapper">
-  <main class="form-wrapper">
-    <form action="/contact-versturen.php" method="post">
-      <!-- Bedrijfsnaam -->
-      <div class="mb-4">
-        <label for="bedrijf">Bedrijfsnaam</label>
-        <input type="text" id="bedrijf" name="bedrijf" placeholder="Bedrijfsnaam" />
-      </div>
-      <!-- Voornaam + naam -->
-      <div class="row g-3 mb-4">
-        <div class="col-md-6">
-          <label for="voornaam">Voornaam <span class="required">(Verplicht)</span></label>
-          <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" required />
-        </div>
-        <div class="col-md-6">
-          <label for="familienaam">Familienaam <span class="required">(Verplicht)</span></label>
-          <input type="text" id="familienaam" name="familienaam" placeholder="Familienaam" required />
-        </div>
-      </div>
-      <!-- Straat + Nr -->
-      <div class="row g-3 mb-3 align-items-end">
-        <div class="col-12 col-md-8">
-          <label for="straat">Adres <span class="required">(Verplicht)</span></label>
-          <input type="text" id="straat" name="straat" placeholder="Straat" required />
-        </div>
-        <div class="col-5 col-md-2 number-input">
-          <label for="nummer" class="visually-hidden">Nr</label>
-          <input type="text" id="nummer" name="nummer" placeholder="Nr" />
-        </div>
-        <div class="col-5 col-md-2 number-input">
-          <label for="bus" class="visually-hidden">bus</label>
-          <input type="text" id="bus" name="bus" placeholder="bus" />
-        </div>
-      </div>
-      <!-- Postcode + Gemeente -->
-      <div class="row g-3 mb-4 align-items-end">
-        <div class="col-5 col-md-6">
-          <label for="postcode">Postcode <span class="required">(Verplicht)</span></label>
-          <input type="text" id="postcode" name="postcode" placeholder="Postcode" required />
-        </div>
-        <div class="col-6 col-md-6">
-          <label for="gemeente" class="visually-hidden">Gemeente</label>
-          <input type="text" id="gemeente" name="gemeente" placeholder="Gemeente" required />
-        </div>
-      </div>
-      <!-- Mail + Telefoon -->
-      <div class="row g-3 mb-4">
-        <div class="col-md-6">
-          <label for="email">E-mail <span class="required">(Verplicht)</span></label>
-          <input type="email" id="email" name="email" placeholder="E-mailadres" required />
-        </div>
-        <div class="col-md-6">
-          <label for="telefoon">Telefoon</label>
-          <input type="tel" id="telefoon" name="telefoon" placeholder="Telefoon" pattern="[0-9]{10}" />
-        </div>
-      </div>
-      <!-- Dropdown selecter -->
-      <div class="row g-3 mb-4">
-        <div class="col-12">
-          <label for="onderwerp">Onderwerp</label>
-          <select id="onderwerp" name="subject" class="form-select" required>
-            <option value="" disabled selected>Kies...</option>
-            <option>Back-up Oplossing</option>
-            <option>Hardware</option>
-            <option>Netwerk</option>
-            <option>Website</option>
-            <option>Microsoft 365</option>
-            <option>Microsoft Automatisatie</option>
-            <option>Telefonie</option>
-            <option>Cybersecurity</option>
-            <option>Herstellingen</option>
-            <option>Support</option>
-            <option>Advies</option>
-            <option>Andere</option>
-          </select>
-        </div>
-      </div>
-      <!-- Bericht -->
-      <div class="mb-4">
-        <label for="bericht">Jouw bericht <span class="required">(Verplicht)</span></label>
-        <textarea id="bericht" name="bericht" rows="6" placeholder="Je bericht" required></textarea>
-      </div>
-           <!-- Taal -->
-      <input type="hidden" name="lang" value="nl">
-          <!-- Submit -->
-          <button type="submit" class="submit-btn">Send</button>
+    <div id="contact" class="page-wrapper">
+      <main class="form-wrapper">
+        <form action="/contact-versturen.php" method="post">
+          <!-- Bedrijfsnaam -->
+          <div class="mb-4">
+            <label for="bedrijf">Bedrijfsnaam</label>
+            <input type="text" id="bedrijf" name="bedrijf" placeholder="Bedrijfsnaam" />
+          </div>
+          <!-- Voornaam + naam -->
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <label for="voornaam">Voornaam <span class="required">(Verplicht)</span></label>
+              <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" required />
+            </div>
+            <div class="col-md-6">
+              <label for="familienaam">Familienaam <span class="required">(Verplicht)</span></label>
+              <input type="text" id="familienaam" name="familienaam" placeholder="Familienaam" required />
+            </div>
+          </div>
+          <!-- Straat + Nr -->
+          <div class="row g-3 mb-3 align-items-end">
+            <div class="col-12 col-md-8">
+              <label for="straat">Adres <span class="required">(Verplicht)</span></label>
+              <input type="text" id="straat" name="straat" placeholder="Straat" required />
+            </div>
+            <div class="col-5 col-md-2 number-input">
+              <label for="nummer" class="visually-hidden">Nr</label>
+              <input type="text" id="nummer" name="nummer" placeholder="Nr" />
+            </div>
+            <div class="col-5 col-md-2 number-input">
+              <label for="bus" class="visually-hidden">bus</label>
+              <input type="text" id="bus" name="bus" placeholder="bus" />
+            </div>
+          </div>
+          <!-- Postcode + Gemeente -->
+          <div class="row g-3 mb-4 align-items-end">
+            <div class="col-5 col-md-6">
+              <label for="postcode">Postcode <span class="required">(Verplicht)</span></label>
+              <input type="text" id="postcode" name="postcode" placeholder="Postcode" required />
+            </div>
+            <div class="col-6 col-md-6">
+              <label for="gemeente" class="visually-hidden">Gemeente</label>
+              <input type="text" id="gemeente" name="gemeente" placeholder="Gemeente" required />
+            </div>
+          </div>
+          <!-- Mail + Telefoon -->
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <label for="email">E-mail <span class="required">(Verplicht)</span></label>
+              <input type="email" id="email" name="email" placeholder="E-mailadres" required />
+            </div>
+            <div class="col-md-6">
+              <label for="telefoon">Telefoon</label>
+              <input type="tel" id="telefoon" name="telefoon" placeholder="Telefoon" pattern="[0-9]{10}" />
+            </div>
+          </div>
+          <!-- Dropdown selecter -->
+          <div class="row g-3 mb-4">
+            <div class="col-12">
+              <label for="onderwerp">Onderwerp</label>
+              <select id="onderwerp" name="subject" class="form-select" required>
+                <option value="" disabled selected>Kies...</option>
+                <option>Back-up Oplossing</option>
+                <option>Hardware</option>
+                <option>Netwerk</option>
+                <option>Website</option>
+                <option>Microsoft 365</option>
+                <option>Microsoft Automatisatie</option>
+                <option>Telefonie</option>
+                <option>Cybersecurity</option>
+                <option>Herstellingen</option>
+                <option>Support</option>
+                <option>Advies</option>
+                <option>Andere</option>
+              </select>
+            </div>
+          </div>
+          <!-- Bericht -->
+          <div class="mb-4">
+            <label for="bericht">Jouw bericht <span class="required">(Verplicht)</span></label>
+            <textarea id="bericht" name="bericht" rows="6" placeholder="Je bericht" required></textarea>
+          </div>
+          <!-- Taal -->
+          <input type="hidden" name="lang" value="nl" />
+          <!-- Verzendknop -->
+            <button type="submit" class="submit-btn">Verzenden</button>
         </form>
       </main>
     </div>
@@ -208,7 +208,7 @@
     <div id="floating-lang">
       <button class="lang-btn" data-url="#top" onclick="changeLanguage('#top')">↑</button>
     </div>
-   <!-- Start Footer -->
+    <!-- Start Footer -->
     <footer class="footer">
       <!-- ======= Footer quote Section ======= -->
       <div class="footer-quote" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
@@ -276,4 +276,3 @@
     <script src="/js/AOS.js"></script>
   </body>
 </html>
-

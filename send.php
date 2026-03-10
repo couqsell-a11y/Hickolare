@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // -----------------------------
     // CAPTCHA VERIFICATION
     // -----------------------------
-    $secret = "YOUR_SECRET_KEY"; // Replace with your Google reCAPTCHA secret
+    $secret = "6Lf1IoYsAAAAAKPQBkTrrEBpeNnECqKWAeH8-hHH"; // Replace with your Google reCAPTCHA secret
     $response = $_POST['g-recaptcha-response'] ?? '';
 
     $verify = file_get_contents(

@@ -169,6 +169,15 @@
             <label for="bericht">Your Message <span class="required">(Required)</span></label>
             <textarea id="bericht" name="bericht" rows="6" placeholder="Your message" required></textarea>
           </div>
+		  <!-- Taal -->
+          <input type="hidden" name="lang" value="en" />
+          <!-- Honeypot hidden field -->
+          <input type="text" name="website" style="display: none" />
+          <!-- Timestamp for timing protection -->
+          <input type="hidden" name="form_start" value="<?php echo time(); ?>" />
+          <!-- Google reCAPTCHA -->
+          <div class="g-recaptcha" data-sitekey="6LfMPIYsAAAAAL1z1GsBU_BvCOfojj6aHHIvCHBP"></div>
+          <script src="https://www.google.com/recaptcha/api.js" async defer></script>
           <!-- Submit -->
           <button type="submit" class="submit-btn">Send</button>
         </form>

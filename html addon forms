@@ -1,0 +1,21 @@
+<form action="/contact.php" method="POST">
+
+    <input type="text" name="voornaam" placeholder="First name" required>
+    <input type="text" name="familienaam" placeholder="Last name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="bedrijf" placeholder="Company">
+    <input type="text" name="subject" placeholder="Subject" required>
+    <textarea name="bericht" placeholder="Message" required></textarea>
+
+    <!-- Honeypot hidden field -->
+    <input type="text" name="website" style="display:none">
+
+    <!-- Timestamp for timing protection -->
+    <input type="hidden" name="form_start" value="<?php echo time(); ?>">
+
+    <!-- Google reCAPTCHA -->
+    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <button type="submit">Send</button>
+</form>

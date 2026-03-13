@@ -467,24 +467,21 @@ input {
   color: #000 !important;
 }
 
-/* Open dropdown on hover (desktop only) */
-@media (min-width: 769px) {
-  /* desktop only */
+/* Open dropdown on hover (desktop only)
+@media (min-width: 992px) {
   #mainNavbar .nav-item.dropdown:hover > .dropdown-menu {
     display: block;
     opacity: 1;
     visibility: visible;
   }
-
-  /* optional smooth fade-in */
   #mainNavbar .nav-item.dropdown > .dropdown-menu {
     transition: opacity 0.3s ease;
     opacity: 0;
     visibility: hidden;
-    display: block; /* ensure dropdown stays in flow for animation */
+    display: block;
   }
 }
-
+Change me pls*/
 /* --- Yellow Navbar Button (rectangular version) --- */
 #mainNavbar .btn-yellow-navbar {
   background-color: #ffcc00;
@@ -872,7 +869,7 @@ input {
   transform: translateY(-10px) scale;
 }
 
-/* Floating Scroll to Top Button */
+/* Floating Scroll to Top Button 
 #scrollTopBtn {
   position: fixed;
   right: 20px;
@@ -903,11 +900,25 @@ input {
   opacity: 1;
   transform: translateY(0);
 }
+/* change me pls */
+#scrollTopBtn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+}
 
-/* Hover */
+#scrollTopBtn:hover {
+  background: #0056b3;
+}
+/* Hover 
 #scrollTopBtn:hover {
   background: var(--primary-dark);
-}
+}*/
 
 /* Responsive */
 @media (max-width: 700px) {
@@ -979,7 +990,7 @@ input {
   gap: 10px;
 }
 
-#floating-lang button {
+#floating-lang .lang-btn {
   background: #007bff;
   color: #fff;
   border: none;
@@ -987,10 +998,12 @@ input {
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
 }
-
-#floating-lang button:hover {
+#floating-lang .lang-btn:hover {
   background: #0056b3;
+  color: #fff;
 }
 
 .lang-btn.current {
